@@ -1,0 +1,548 @@
+{
+    "runtime": "python",
+    "version": "0.1.24",
+    "trace": {
+        "name": "coherence_evaluation",
+        "__time": {
+            "start": "2024-10-14T19:08:09.635751",
+            "end": "2024-10-14T19:08:11.301654",
+            "duration": 1665
+        },
+        "signature": "evaluators.custom_evals.coherence.coherence_evaluation",
+        "inputs": {
+            "question": "Do you have any climbing gear?",
+            "context": [
+                {
+                    "id": "3",
+                    "title": "Summit Breeze Jacket",
+                    "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                    "url": "/products/summit-breeze-jacket"
+                },
+                {
+                    "id": "9",
+                    "title": "SummitClimber Backpack",
+                    "content": "Adventure waits for no one! Introducing the HikeMate SummitClimber Backpack, your reliable partner for every exhilarating journey. With a generous 60-liter capacity and multiple compartments and pockets, packing is a breeze. Every feature points to comfort and convenience; the ergonomic design and adjustable hip belt ensure a pleasantly personalized fit, while padded shoulder straps protect you from the burden of carrying. Venturing into wet weather? Fear not! The integrated rain cover has your back, literally. Stay hydrated thanks to the backpack's hydration system compatibility. Travelling during twilight? Reflective accents keep you visible in low-light conditions. The SummitClimber Backpack isn't merely a carrier; it's a wearable base camp constructed from ruggedly durable nylon and thoughtfully designed for the great outdoors adventurer, promising to withstand tough conditions and provide years of service. So, set off on that quest - the wild beckons! The SummitClimber Backpack - your hearty companion on every expedition!",
+                    "url": "/products/summitclimber-backpack"
+                }
+            ],
+            "answer": "Yes, we have climbing gear! \ud83e\uddd7\u200d\u2642\ufe0f For your outdoor adventures, we recommend the SummitClimber Backpack (catalog: 9) which is a reliable partner for every exhilarating journey. It has a generous 60-liter capacity and multiple compartments and pockets for all your climbing essentials. And don't forget the Summit Breeze Jacket (catalog: 3), a lightweight and windproof jacket that will keep you comfortable and protected during your climbs. Happy climbing! \ud83c\udfd4\ufe0f\ud83c\udf1f"
+        },
+        "__frames": [
+            {
+                "name": "execute",
+                "__time": {
+                    "start": "2024-10-14T19:08:09.635928",
+                    "end": "2024-10-14T19:08:11.301601",
+                    "duration": 1665
+                },
+                "signature": "prompty.execute",
+                "description": "Execute a prompty",
+                "inputs": {
+                    "prompt": "coherence.prompty",
+                    "configuration": {
+                        "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                        "api_version": "2023-03-15-preview"
+                    },
+                    "parameters": {},
+                    "inputs": {
+                        "question": "Do you have any climbing gear?",
+                        "context": [
+                            {
+                                "id": "3",
+                                "title": "Summit Breeze Jacket",
+                                "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                "url": "/products/summit-breeze-jacket"
+                            },
+                            {
+                                "id": "9",
+                                "title": "SummitClimber Backpack",
+                                "content": "Adventure waits for no one! Introducing the HikeMate SummitClimber Backpack, your reliable partner for every exhilarating journey. With a generous 60-liter capacity and multiple compartments and pockets, packing is a breeze. Every feature points to comfort and convenience; the ergonomic design and adjustable hip belt ensure a pleasantly personalized fit, while padded shoulder straps protect you from the burden of carrying. Venturing into wet weather? Fear not! The integrated rain cover has your back, literally. Stay hydrated thanks to the backpack's hydration system compatibility. Travelling during twilight? Reflective accents keep you visible in low-light conditions. The SummitClimber Backpack isn't merely a carrier; it's a wearable base camp constructed from ruggedly durable nylon and thoughtfully designed for the great outdoors adventurer, promising to withstand tough conditions and provide years of service. So, set off on that quest - the wild beckons! The SummitClimber Backpack - your hearty companion on every expedition!",
+                                "url": "/products/summitclimber-backpack"
+                            }
+                        ],
+                        "answer": "Yes, we have climbing gear! \ud83e\uddd7\u200d\u2642\ufe0f For your outdoor adventures, we recommend the SummitClimber Backpack (catalog: 9) which is a reliable partner for every exhilarating journey. It has a generous 60-liter capacity and multiple compartments and pockets for all your climbing essentials. And don't forget the Summit Breeze Jacket (catalog: 3), a lightweight and windproof jacket that will keep you comfortable and protected during your climbs. Happy climbing! \ud83c\udfd4\ufe0f\ud83c\udf1f"
+                    },
+                    "raw": false,
+                    "config_name": "default"
+                },
+                "__frames": [
+                    {
+                        "name": "load",
+                        "__time": {
+                            "start": "2024-10-14T19:08:09.636421",
+                            "end": "2024-10-14T19:08:09.639237",
+                            "duration": 2
+                        },
+                        "signature": "prompty.load",
+                        "description": "Load a prompty file.",
+                        "inputs": {
+                            "prompty_file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                            "configuration": "default"
+                        },
+                        "result": {
+                            "name": "QnA Coherence Evaluation",
+                            "description": "Evaluates coherence score for QA scenario",
+                            "model": {
+                                "api": "chat",
+                                "configuration": {
+                                    "type": "azure_openai",
+                                    "azure_deployment": "gpt-4-evals",
+                                    "api_version": "2023-07-01-preview"
+                                },
+                                "parameters": {
+                                    "max_tokens": 128,
+                                    "temperature": 0.2
+                                },
+                                "response": {}
+                            },
+                            "sample": {
+                                "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                            },
+                            "inputs": {
+                                "question": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "context": {
+                                    "type": "object",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "answer": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                }
+                            },
+                            "template": {
+                                "type": "jinja2",
+                                "parser": "prompty"
+                            },
+                            "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                            "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                        }
+                    },
+                    {
+                        "name": "prepare",
+                        "__time": {
+                            "start": "2024-10-14T19:08:09.639284",
+                            "end": "2024-10-14T19:08:09.640959",
+                            "duration": 1
+                        },
+                        "signature": "prompty.prepare",
+                        "description": "Prepare the inputs for the prompt.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Coherence Evaluation",
+                                "description": "Evaluates coherence score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_deployment": "gpt-4-evals",
+                                        "api_version": "2023-07-01-preview"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 128,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "inputs": {
+                                "question": "Do you have any climbing gear?",
+                                "context": [
+                                    {
+                                        "id": "3",
+                                        "title": "Summit Breeze Jacket",
+                                        "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                        "url": "/products/summit-breeze-jacket"
+                                    },
+                                    {
+                                        "id": "9",
+                                        "title": "SummitClimber Backpack",
+                                        "content": "Adventure waits for no one! Introducing the HikeMate SummitClimber Backpack, your reliable partner for every exhilarating journey. With a generous 60-liter capacity and multiple compartments and pockets, packing is a breeze. Every feature points to comfort and convenience; the ergonomic design and adjustable hip belt ensure a pleasantly personalized fit, while padded shoulder straps protect you from the burden of carrying. Venturing into wet weather? Fear not! The integrated rain cover has your back, literally. Stay hydrated thanks to the backpack's hydration system compatibility. Travelling during twilight? Reflective accents keep you visible in low-light conditions. The SummitClimber Backpack isn't merely a carrier; it's a wearable base camp constructed from ruggedly durable nylon and thoughtfully designed for the great outdoors adventurer, promising to withstand tough conditions and provide years of service. So, set off on that quest - the wild beckons! The SummitClimber Backpack - your hearty companion on every expedition!",
+                                        "url": "/products/summitclimber-backpack"
+                                    }
+                                ],
+                                "answer": "Yes, we have climbing gear! \ud83e\uddd7\u200d\u2642\ufe0f For your outdoor adventures, we recommend the SummitClimber Backpack (catalog: 9) which is a reliable partner for every exhilarating journey. It has a generous 60-liter capacity and multiple compartments and pockets for all your climbing essentials. And don't forget the Summit Breeze Jacket (catalog: 3), a lightweight and windproof jacket that will keep you comfortable and protected during your climbs. Happy climbing! \ud83c\udfd4\ufe0f\ud83c\udf1f"
+                            }
+                        },
+                        "__frames": [
+                            {
+                                "name": "Jinja2Renderer",
+                                "__time": {
+                                    "start": "2024-10-14T19:08:09.639640",
+                                    "end": "2024-10-14T19:08:09.640598",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.renderers.Jinja2Renderer.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "question": "Do you have any climbing gear?",
+                                        "context": [
+                                            {
+                                                "id": "3",
+                                                "title": "Summit Breeze Jacket",
+                                                "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                                "url": "/products/summit-breeze-jacket"
+                                            },
+                                            {
+                                                "id": "9",
+                                                "title": "SummitClimber Backpack",
+                                                "content": "Adventure waits for no one! Introducing the HikeMate SummitClimber Backpack, your reliable partner for every exhilarating journey. With a generous 60-liter capacity and multiple compartments and pockets, packing is a breeze. Every feature points to comfort and convenience; the ergonomic design and adjustable hip belt ensure a pleasantly personalized fit, while padded shoulder straps protect you from the burden of carrying. Venturing into wet weather? Fear not! The integrated rain cover has your back, literally. Stay hydrated thanks to the backpack's hydration system compatibility. Travelling during twilight? Reflective accents keep you visible in low-light conditions. The SummitClimber Backpack isn't merely a carrier; it's a wearable base camp constructed from ruggedly durable nylon and thoughtfully designed for the great outdoors adventurer, promising to withstand tough conditions and provide years of service. So, set off on that quest - the wild beckons! The SummitClimber Backpack - your hearty companion on every expedition!",
+                                                "url": "/products/summitclimber-backpack"
+                                            }
+                                        ],
+                                        "answer": "Yes, we have climbing gear! \ud83e\uddd7\u200d\u2642\ufe0f For your outdoor adventures, we recommend the SummitClimber Backpack (catalog: 9) which is a reliable partner for every exhilarating journey. It has a generous 60-liter capacity and multiple compartments and pockets for all your climbing essentials. And don't forget the Summit Breeze Jacket (catalog: 3), a lightweight and windproof jacket that will keep you comfortable and protected during your climbs. Happy climbing! \ud83c\udfd4\ufe0f\ud83c\udf1f"
+                                    }
+                                },
+                                "result": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: Do you have any climbing gear?\nanswer: Yes, we have climbing gear! \ud83e\uddd7\u200d\u2642\ufe0f For your outdoor adventures, we recommend the SummitClimber Backpack (catalog: 9) which is a reliable partner for every exhilarating journey. It has a generous 60-liter capacity and multiple compartments and pockets for all your climbing essentials. And don't forget the Summit Breeze Jacket (catalog: 3), a lightweight and windproof jacket that will keep you comfortable and protected during your climbs. Happy climbing! \ud83c\udfd4\ufe0f\ud83c\udf1f\nstars:"
+                            },
+                            {
+                                "name": "PromptyChatParser",
+                                "__time": {
+                                    "start": "2024-10-14T19:08:09.640656",
+                                    "end": "2024-10-14T19:08:09.640876",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.parsers.PromptyChatParser.invoke",
+                                "inputs": {
+                                    "data": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: Do you have any climbing gear?\nanswer: Yes, we have climbing gear! \ud83e\uddd7\u200d\u2642\ufe0f For your outdoor adventures, we recommend the SummitClimber Backpack (catalog: 9) which is a reliable partner for every exhilarating journey. It has a generous 60-liter capacity and multiple compartments and pockets for all your climbing essentials. And don't forget the Summit Breeze Jacket (catalog: 3), a lightweight and windproof jacket that will keep you comfortable and protected during your climbs. Happy climbing! \ud83c\udfd4\ufe0f\ud83c\udf1f\nstars:"
+                                },
+                                "result": [
+                                    {
+                                        "role": "system",
+                                        "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                    },
+                                    {
+                                        "role": "user",
+                                        "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: Do you have any climbing gear?\nanswer: Yes, we have climbing gear! \ud83e\uddd7\u200d\u2642\ufe0f For your outdoor adventures, we recommend the SummitClimber Backpack (catalog: 9) which is a reliable partner for every exhilarating journey. It has a generous 60-liter capacity and multiple compartments and pockets for all your climbing essentials. And don't forget the Summit Breeze Jacket (catalog: 3), a lightweight and windproof jacket that will keep you comfortable and protected during your climbs. Happy climbing! \ud83c\udfd4\ufe0f\ud83c\udf1f\nstars:"
+                                    }
+                                ]
+                            }
+                        ],
+                        "result": [
+                            {
+                                "role": "system",
+                                "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                            },
+                            {
+                                "role": "user",
+                                "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: Do you have any climbing gear?\nanswer: Yes, we have climbing gear! \ud83e\uddd7\u200d\u2642\ufe0f For your outdoor adventures, we recommend the SummitClimber Backpack (catalog: 9) which is a reliable partner for every exhilarating journey. It has a generous 60-liter capacity and multiple compartments and pockets for all your climbing essentials. And don't forget the Summit Breeze Jacket (catalog: 3), a lightweight and windproof jacket that will keep you comfortable and protected during your climbs. Happy climbing! \ud83c\udfd4\ufe0f\ud83c\udf1f\nstars:"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "run",
+                        "__time": {
+                            "start": "2024-10-14T19:08:09.640993",
+                            "end": "2024-10-14T19:08:11.301536",
+                            "duration": 1660
+                        },
+                        "signature": "prompty.run",
+                        "description": "Run the prepared Prompty content against the model.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Coherence Evaluation",
+                                "description": "Evaluates coherence score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_deployment": "gpt-4-evals",
+                                        "api_version": "2023-07-01-preview"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 128,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "content": [
+                                {
+                                    "role": "system",
+                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                },
+                                {
+                                    "role": "user",
+                                    "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: Do you have any climbing gear?\nanswer: Yes, we have climbing gear! \ud83e\uddd7\u200d\u2642\ufe0f For your outdoor adventures, we recommend the SummitClimber Backpack (catalog: 9) which is a reliable partner for every exhilarating journey. It has a generous 60-liter capacity and multiple compartments and pockets for all your climbing essentials. And don't forget the Summit Breeze Jacket (catalog: 3), a lightweight and windproof jacket that will keep you comfortable and protected during your climbs. Happy climbing! \ud83c\udfd4\ufe0f\ud83c\udf1f\nstars:"
+                                }
+                            ],
+                            "configuration": {
+                                "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                                "api_version": "2023-03-15-preview"
+                            },
+                            "parameters": {},
+                            "raw": false
+                        },
+                        "__frames": [
+                            {
+                                "name": "AzureOpenAIExecutor",
+                                "__time": {
+                                    "start": "2024-10-14T19:08:09.641558",
+                                    "end": "2024-10-14T19:08:11.301035",
+                                    "duration": 1659
+                                },
+                                "signature": "prompty.azure.executor.AzureOpenAIExecutor.invoke",
+                                "inputs": {
+                                    "data": [
+                                        {
+                                            "role": "system",
+                                            "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                        },
+                                        {
+                                            "role": "user",
+                                            "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: Do you have any climbing gear?\nanswer: Yes, we have climbing gear! \ud83e\uddd7\u200d\u2642\ufe0f For your outdoor adventures, we recommend the SummitClimber Backpack (catalog: 9) which is a reliable partner for every exhilarating journey. It has a generous 60-liter capacity and multiple compartments and pockets for all your climbing essentials. And don't forget the Summit Breeze Jacket (catalog: 3), a lightweight and windproof jacket that will keep you comfortable and protected during your climbs. Happy climbing! \ud83c\udfd4\ufe0f\ud83c\udf1f\nstars:"
+                                        }
+                                    ]
+                                },
+                                "__frames": [
+                                    {
+                                        "name": "AzureOpenAI",
+                                        "__time": {
+                                            "start": "2024-10-14T19:08:09.641680",
+                                            "end": "2024-10-14T19:08:09.648232",
+                                            "duration": 6
+                                        },
+                                        "type": "LLM",
+                                        "signature": "AzureOpenAI.ctor",
+                                        "description": "Azure OpenAI Constructor",
+                                        "inputs": {
+                                            "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                                            "api_version": "2023-03-15-preview",
+                                            "azure_deployment": "gpt-4-evals",
+                                            "azure_ad_token_provider": "***********************************************************************"
+                                        },
+                                        "result": "<openai.lib.azure.AzureOpenAI object at 0x778013013310>"
+                                    },
+                                    {
+                                        "name": "create",
+                                        "__time": {
+                                            "start": "2024-10-14T19:08:09.648277",
+                                            "end": "2024-10-14T19:08:11.300519",
+                                            "duration": 1652
+                                        },
+                                        "type": "LLM",
+                                        "description": "Azure OpenAI Client",
+                                        "signature": "AzureOpenAI.chat.completions.create",
+                                        "inputs": {
+                                            "model": "gpt-4-evals",
+                                            "messages": [
+                                                {
+                                                    "role": "system",
+                                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                                },
+                                                {
+                                                    "role": "user",
+                                                    "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: Do you have any climbing gear?\nanswer: Yes, we have climbing gear! \ud83e\uddd7\u200d\u2642\ufe0f For your outdoor adventures, we recommend the SummitClimber Backpack (catalog: 9) which is a reliable partner for every exhilarating journey. It has a generous 60-liter capacity and multiple compartments and pockets for all your climbing essentials. And don't forget the Summit Breeze Jacket (catalog: 3), a lightweight and windproof jacket that will keep you comfortable and protected during your climbs. Happy climbing! \ud83c\udfd4\ufe0f\ud83c\udf1f\nstars:"
+                                                }
+                                            ],
+                                            "max_tokens": 128,
+                                            "temperature": 0.2
+                                        },
+                                        "result": {
+                                            "id": "chatcmpl-AIKiIBXukJbhmzv7o9Kzba6ExLb8Y",
+                                            "choices": [
+                                                {
+                                                    "finish_reason": "stop",
+                                                    "index": 0,
+                                                    "logprobs": null,
+                                                    "message": {
+                                                        "content": "4",
+                                                        "refusal": null,
+                                                        "role": "assistant",
+                                                        "function_call": null,
+                                                        "tool_calls": null
+                                                    }
+                                                }
+                                            ],
+                                            "created": 1728932890,
+                                            "model": "gpt-4",
+                                            "object": "chat.completion",
+                                            "service_tier": null,
+                                            "system_fingerprint": "fp_811936bd4f",
+                                            "usage": {
+                                                "completion_tokens": 1,
+                                                "prompt_tokens": 586,
+                                                "total_tokens": 587,
+                                                "completion_tokens_details": null,
+                                                "prompt_tokens_details": null
+                                            }
+                                        },
+                                        "__usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 586,
+                                            "total_tokens": 587
+                                        }
+                                    }
+                                ],
+                                "result": {
+                                    "id": "chatcmpl-AIKiIBXukJbhmzv7o9Kzba6ExLb8Y",
+                                    "choices": [
+                                        {
+                                            "finish_reason": "stop",
+                                            "index": 0,
+                                            "logprobs": "None",
+                                            "message": {
+                                                "content": "4",
+                                                "refusal": "None",
+                                                "role": "assistant",
+                                                "function_call": "None",
+                                                "tool_calls": "None"
+                                            }
+                                        }
+                                    ],
+                                    "created": 1728932890,
+                                    "model": "gpt-4",
+                                    "object": "chat.completion",
+                                    "service_tier": "None",
+                                    "system_fingerprint": "fp_811936bd4f",
+                                    "usage": {
+                                        "completion_tokens": 1,
+                                        "prompt_tokens": 586,
+                                        "total_tokens": 587,
+                                        "completion_tokens_details": "****",
+                                        "prompt_tokens_details": "****"
+                                    }
+                                },
+                                "__usage": {
+                                    "completion_tokens": 2,
+                                    "prompt_tokens": 1172,
+                                    "total_tokens": 1174,
+                                    "completion_tokens_details": "****",
+                                    "prompt_tokens_details": "****"
+                                }
+                            },
+                            {
+                                "name": "AzureOpenAIProcessor",
+                                "__time": {
+                                    "start": "2024-10-14T19:08:11.301150",
+                                    "end": "2024-10-14T19:08:11.301476",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.azure.processor.AzureOpenAIProcessor.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "id": "chatcmpl-AIKiIBXukJbhmzv7o9Kzba6ExLb8Y",
+                                        "choices": [
+                                            {
+                                                "finish_reason": "stop",
+                                                "index": 0,
+                                                "logprobs": "None",
+                                                "message": {
+                                                    "content": "4",
+                                                    "refusal": "None",
+                                                    "role": "assistant",
+                                                    "function_call": "None",
+                                                    "tool_calls": "None"
+                                                }
+                                            }
+                                        ],
+                                        "created": 1728932890,
+                                        "model": "gpt-4",
+                                        "object": "chat.completion",
+                                        "service_tier": "None",
+                                        "system_fingerprint": "fp_811936bd4f",
+                                        "usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 586,
+                                            "total_tokens": 587,
+                                            "completion_tokens_details": "****",
+                                            "prompt_tokens_details": "****"
+                                        }
+                                    }
+                                },
+                                "result": "4"
+                            }
+                        ],
+                        "result": "4",
+                        "__usage": {
+                            "completion_tokens": 2,
+                            "prompt_tokens": 1172,
+                            "total_tokens": 1174,
+                            "completion_tokens_details": "****",
+                            "prompt_tokens_details": "****"
+                        }
+                    }
+                ],
+                "result": "4",
+                "__usage": {
+                    "completion_tokens": 2,
+                    "prompt_tokens": 1172,
+                    "total_tokens": 1174,
+                    "completion_tokens_details": "****",
+                    "prompt_tokens_details": "****"
+                }
+            }
+        ],
+        "result": "4",
+        "__usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 1172,
+            "total_tokens": 1174,
+            "completion_tokens_details": "****",
+            "prompt_tokens_details": "****"
+        }
+    }
+}

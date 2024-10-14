@@ -1,0 +1,548 @@
+{
+    "runtime": "python",
+    "version": "0.1.24",
+    "trace": {
+        "name": "coherence_evaluation",
+        "__time": {
+            "start": "2024-10-14T19:12:13.995583",
+            "end": "2024-10-14T19:12:16.613419",
+            "duration": 2617
+        },
+        "signature": "evaluators.custom_evals.coherence.coherence_evaluation",
+        "inputs": {
+            "question": "what is the waterproof rating of the TrailMaster X4 Tent's rainfly?",
+            "context": [
+                {
+                    "id": "1",
+                    "title": "TrailMaster X4 Tent",
+                    "content": "Unveiling the TrailMaster X4 Tent from OutdoorLiving, your home away from home for your next camping adventure. Crafted from durable polyester, this tent boasts a spacious interior perfect for four occupants. It ensures your dryness under drizzly skies thanks to its water-resistant construction, and the accompanying rainfly adds an extra layer of weather protection. It offers refreshing airflow and bug defence, courtesy of its mesh panels. Accessibility is not an issue with its multiple doors and interior pockets that keep small items tidy. Reflective guy lines grant better visibility at night, and the freestanding design simplifies setup and relocation. With the included carry bag, transporting this convenient abode becomes a breeze. Be it an overnight getaway or a week-long nature escapade, the TrailMaster X4 Tent provides comfort, convenience, and concord with the great outdoors. Comes with a two-year limited warranty to ensure customer satisfaction.",
+                    "url": "/products/trailmaster-x4-tent"
+                },
+                {
+                    "id": "15",
+                    "title": "SkyView 2-Person Tent",
+                    "content": "Introducing the OutdoorLiving SkyView 2-Person Tent, a perfect companion for your camping and hiking adventures. This tent offers a spacious interior that houses two people comfortably, with room to spare. Crafted from durable waterproof materials to shield you from the elements, it is the fortress you need in the wild. Setup is a breeze thanks to its intuitive design and color-coded poles, while two large doors allow for easy access. Stay organized with interior pockets, and store additional gear in its two vestibules. The tent also features mesh panels for effective ventilation, and it comes with a rainfly for extra weather protection. Light enough for on-the-go adventurers, it packs compactly into a carrying bag for seamless transportation. Reflective guy lines ensure visibility at night for added safety, and the tent stands freely for versatile placement. Experience the reliability of double-stitched seams that guarantee increased durability, and rest easy under the stars with OutdoorLiving's SkyView 2-Person Tent. It's not just a tent; it's your home away from home.",
+                    "url": "/products/skyview-2-person-tent"
+                }
+            ],
+            "answer": "The TrailMaster X4 Tent's rainfly has a waterproof rating of [relevant document]. \ud83c\udf27\ufe0f\ud83c\udfd5\ufe0f\n\nFor a complete camping setup, you might also consider the EcoFire Camping Stove \ud83d\udd25 and the SkyView 2-Person Tent \ud83c\udf1f. Happy camping! \ud83c\udfd5\ufe0f\ud83d\ude0a\n\n[relevant document]: catalog: 1, item: TrailMaster X4 Tent"
+        },
+        "__frames": [
+            {
+                "name": "execute",
+                "__time": {
+                    "start": "2024-10-14T19:12:13.995818",
+                    "end": "2024-10-14T19:12:16.613379",
+                    "duration": 2617
+                },
+                "signature": "prompty.execute",
+                "description": "Execute a prompty",
+                "inputs": {
+                    "prompt": "coherence.prompty",
+                    "configuration": {
+                        "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                        "api_version": "2023-03-15-preview"
+                    },
+                    "parameters": {},
+                    "inputs": {
+                        "question": "what is the waterproof rating of the TrailMaster X4 Tent's rainfly?",
+                        "context": [
+                            {
+                                "id": "1",
+                                "title": "TrailMaster X4 Tent",
+                                "content": "Unveiling the TrailMaster X4 Tent from OutdoorLiving, your home away from home for your next camping adventure. Crafted from durable polyester, this tent boasts a spacious interior perfect for four occupants. It ensures your dryness under drizzly skies thanks to its water-resistant construction, and the accompanying rainfly adds an extra layer of weather protection. It offers refreshing airflow and bug defence, courtesy of its mesh panels. Accessibility is not an issue with its multiple doors and interior pockets that keep small items tidy. Reflective guy lines grant better visibility at night, and the freestanding design simplifies setup and relocation. With the included carry bag, transporting this convenient abode becomes a breeze. Be it an overnight getaway or a week-long nature escapade, the TrailMaster X4 Tent provides comfort, convenience, and concord with the great outdoors. Comes with a two-year limited warranty to ensure customer satisfaction.",
+                                "url": "/products/trailmaster-x4-tent"
+                            },
+                            {
+                                "id": "15",
+                                "title": "SkyView 2-Person Tent",
+                                "content": "Introducing the OutdoorLiving SkyView 2-Person Tent, a perfect companion for your camping and hiking adventures. This tent offers a spacious interior that houses two people comfortably, with room to spare. Crafted from durable waterproof materials to shield you from the elements, it is the fortress you need in the wild. Setup is a breeze thanks to its intuitive design and color-coded poles, while two large doors allow for easy access. Stay organized with interior pockets, and store additional gear in its two vestibules. The tent also features mesh panels for effective ventilation, and it comes with a rainfly for extra weather protection. Light enough for on-the-go adventurers, it packs compactly into a carrying bag for seamless transportation. Reflective guy lines ensure visibility at night for added safety, and the tent stands freely for versatile placement. Experience the reliability of double-stitched seams that guarantee increased durability, and rest easy under the stars with OutdoorLiving's SkyView 2-Person Tent. It's not just a tent; it's your home away from home.",
+                                "url": "/products/skyview-2-person-tent"
+                            }
+                        ],
+                        "answer": "The TrailMaster X4 Tent's rainfly has a waterproof rating of [relevant document]. \ud83c\udf27\ufe0f\ud83c\udfd5\ufe0f\n\nFor a complete camping setup, you might also consider the EcoFire Camping Stove \ud83d\udd25 and the SkyView 2-Person Tent \ud83c\udf1f. Happy camping! \ud83c\udfd5\ufe0f\ud83d\ude0a\n\n[relevant document]: catalog: 1, item: TrailMaster X4 Tent"
+                    },
+                    "raw": false,
+                    "config_name": "default"
+                },
+                "__frames": [
+                    {
+                        "name": "load",
+                        "__time": {
+                            "start": "2024-10-14T19:12:13.996491",
+                            "end": "2024-10-14T19:12:14.018161",
+                            "duration": 21
+                        },
+                        "signature": "prompty.load",
+                        "description": "Load a prompty file.",
+                        "inputs": {
+                            "prompty_file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                            "configuration": "default"
+                        },
+                        "result": {
+                            "name": "QnA Coherence Evaluation",
+                            "description": "Evaluates coherence score for QA scenario",
+                            "model": {
+                                "api": "chat",
+                                "configuration": {
+                                    "type": "azure_openai",
+                                    "azure_deployment": "gpt-4-evals",
+                                    "api_version": "2023-07-01-preview"
+                                },
+                                "parameters": {
+                                    "max_tokens": 128,
+                                    "temperature": 0.2
+                                },
+                                "response": {}
+                            },
+                            "sample": {
+                                "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                            },
+                            "inputs": {
+                                "question": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "context": {
+                                    "type": "object",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "answer": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                }
+                            },
+                            "template": {
+                                "type": "jinja2",
+                                "parser": "prompty"
+                            },
+                            "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                            "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                        }
+                    },
+                    {
+                        "name": "prepare",
+                        "__time": {
+                            "start": "2024-10-14T19:12:14.018234",
+                            "end": "2024-10-14T19:12:14.021089",
+                            "duration": 2
+                        },
+                        "signature": "prompty.prepare",
+                        "description": "Prepare the inputs for the prompt.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Coherence Evaluation",
+                                "description": "Evaluates coherence score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_deployment": "gpt-4-evals",
+                                        "api_version": "2023-07-01-preview"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 128,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "inputs": {
+                                "question": "what is the waterproof rating of the TrailMaster X4 Tent's rainfly?",
+                                "context": [
+                                    {
+                                        "id": "1",
+                                        "title": "TrailMaster X4 Tent",
+                                        "content": "Unveiling the TrailMaster X4 Tent from OutdoorLiving, your home away from home for your next camping adventure. Crafted from durable polyester, this tent boasts a spacious interior perfect for four occupants. It ensures your dryness under drizzly skies thanks to its water-resistant construction, and the accompanying rainfly adds an extra layer of weather protection. It offers refreshing airflow and bug defence, courtesy of its mesh panels. Accessibility is not an issue with its multiple doors and interior pockets that keep small items tidy. Reflective guy lines grant better visibility at night, and the freestanding design simplifies setup and relocation. With the included carry bag, transporting this convenient abode becomes a breeze. Be it an overnight getaway or a week-long nature escapade, the TrailMaster X4 Tent provides comfort, convenience, and concord with the great outdoors. Comes with a two-year limited warranty to ensure customer satisfaction.",
+                                        "url": "/products/trailmaster-x4-tent"
+                                    },
+                                    {
+                                        "id": "15",
+                                        "title": "SkyView 2-Person Tent",
+                                        "content": "Introducing the OutdoorLiving SkyView 2-Person Tent, a perfect companion for your camping and hiking adventures. This tent offers a spacious interior that houses two people comfortably, with room to spare. Crafted from durable waterproof materials to shield you from the elements, it is the fortress you need in the wild. Setup is a breeze thanks to its intuitive design and color-coded poles, while two large doors allow for easy access. Stay organized with interior pockets, and store additional gear in its two vestibules. The tent also features mesh panels for effective ventilation, and it comes with a rainfly for extra weather protection. Light enough for on-the-go adventurers, it packs compactly into a carrying bag for seamless transportation. Reflective guy lines ensure visibility at night for added safety, and the tent stands freely for versatile placement. Experience the reliability of double-stitched seams that guarantee increased durability, and rest easy under the stars with OutdoorLiving's SkyView 2-Person Tent. It's not just a tent; it's your home away from home.",
+                                        "url": "/products/skyview-2-person-tent"
+                                    }
+                                ],
+                                "answer": "The TrailMaster X4 Tent's rainfly has a waterproof rating of [relevant document]. \ud83c\udf27\ufe0f\ud83c\udfd5\ufe0f\n\nFor a complete camping setup, you might also consider the EcoFire Camping Stove \ud83d\udd25 and the SkyView 2-Person Tent \ud83c\udf1f. Happy camping! \ud83c\udfd5\ufe0f\ud83d\ude0a\n\n[relevant document]: catalog: 1, item: TrailMaster X4 Tent"
+                            }
+                        },
+                        "__frames": [
+                            {
+                                "name": "Jinja2Renderer",
+                                "__time": {
+                                    "start": "2024-10-14T19:12:14.018803",
+                                    "end": "2024-10-14T19:12:14.020502",
+                                    "duration": 1
+                                },
+                                "signature": "prompty.renderers.Jinja2Renderer.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "question": "what is the waterproof rating of the TrailMaster X4 Tent's rainfly?",
+                                        "context": [
+                                            {
+                                                "id": "1",
+                                                "title": "TrailMaster X4 Tent",
+                                                "content": "Unveiling the TrailMaster X4 Tent from OutdoorLiving, your home away from home for your next camping adventure. Crafted from durable polyester, this tent boasts a spacious interior perfect for four occupants. It ensures your dryness under drizzly skies thanks to its water-resistant construction, and the accompanying rainfly adds an extra layer of weather protection. It offers refreshing airflow and bug defence, courtesy of its mesh panels. Accessibility is not an issue with its multiple doors and interior pockets that keep small items tidy. Reflective guy lines grant better visibility at night, and the freestanding design simplifies setup and relocation. With the included carry bag, transporting this convenient abode becomes a breeze. Be it an overnight getaway or a week-long nature escapade, the TrailMaster X4 Tent provides comfort, convenience, and concord with the great outdoors. Comes with a two-year limited warranty to ensure customer satisfaction.",
+                                                "url": "/products/trailmaster-x4-tent"
+                                            },
+                                            {
+                                                "id": "15",
+                                                "title": "SkyView 2-Person Tent",
+                                                "content": "Introducing the OutdoorLiving SkyView 2-Person Tent, a perfect companion for your camping and hiking adventures. This tent offers a spacious interior that houses two people comfortably, with room to spare. Crafted from durable waterproof materials to shield you from the elements, it is the fortress you need in the wild. Setup is a breeze thanks to its intuitive design and color-coded poles, while two large doors allow for easy access. Stay organized with interior pockets, and store additional gear in its two vestibules. The tent also features mesh panels for effective ventilation, and it comes with a rainfly for extra weather protection. Light enough for on-the-go adventurers, it packs compactly into a carrying bag for seamless transportation. Reflective guy lines ensure visibility at night for added safety, and the tent stands freely for versatile placement. Experience the reliability of double-stitched seams that guarantee increased durability, and rest easy under the stars with OutdoorLiving's SkyView 2-Person Tent. It's not just a tent; it's your home away from home.",
+                                                "url": "/products/skyview-2-person-tent"
+                                            }
+                                        ],
+                                        "answer": "The TrailMaster X4 Tent's rainfly has a waterproof rating of [relevant document]. \ud83c\udf27\ufe0f\ud83c\udfd5\ufe0f\n\nFor a complete camping setup, you might also consider the EcoFire Camping Stove \ud83d\udd25 and the SkyView 2-Person Tent \ud83c\udf1f. Happy camping! \ud83c\udfd5\ufe0f\ud83d\ude0a\n\n[relevant document]: catalog: 1, item: TrailMaster X4 Tent"
+                                    }
+                                },
+                                "result": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the waterproof rating of the TrailMaster X4 Tent's rainfly?\nanswer: The TrailMaster X4 Tent's rainfly has a waterproof rating of [relevant document]. \ud83c\udf27\ufe0f\ud83c\udfd5\ufe0f\n\nFor a complete camping setup, you might also consider the EcoFire Camping Stove \ud83d\udd25 and the SkyView 2-Person Tent \ud83c\udf1f. Happy camping! \ud83c\udfd5\ufe0f\ud83d\ude0a\n\n[relevant document]: catalog: 1, item: TrailMaster X4 Tent\nstars:"
+                            },
+                            {
+                                "name": "PromptyChatParser",
+                                "__time": {
+                                    "start": "2024-10-14T19:12:14.020578",
+                                    "end": "2024-10-14T19:12:14.020958",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.parsers.PromptyChatParser.invoke",
+                                "inputs": {
+                                    "data": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the waterproof rating of the TrailMaster X4 Tent's rainfly?\nanswer: The TrailMaster X4 Tent's rainfly has a waterproof rating of [relevant document]. \ud83c\udf27\ufe0f\ud83c\udfd5\ufe0f\n\nFor a complete camping setup, you might also consider the EcoFire Camping Stove \ud83d\udd25 and the SkyView 2-Person Tent \ud83c\udf1f. Happy camping! \ud83c\udfd5\ufe0f\ud83d\ude0a\n\n[relevant document]: catalog: 1, item: TrailMaster X4 Tent\nstars:"
+                                },
+                                "result": [
+                                    {
+                                        "role": "system",
+                                        "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                    },
+                                    {
+                                        "role": "user",
+                                        "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the waterproof rating of the TrailMaster X4 Tent's rainfly?\nanswer: The TrailMaster X4 Tent's rainfly has a waterproof rating of [relevant document]. \ud83c\udf27\ufe0f\ud83c\udfd5\ufe0f\n\nFor a complete camping setup, you might also consider the EcoFire Camping Stove \ud83d\udd25 and the SkyView 2-Person Tent \ud83c\udf1f. Happy camping! \ud83c\udfd5\ufe0f\ud83d\ude0a\n\n[relevant document]: catalog: 1, item: TrailMaster X4 Tent\nstars:"
+                                    }
+                                ]
+                            }
+                        ],
+                        "result": [
+                            {
+                                "role": "system",
+                                "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                            },
+                            {
+                                "role": "user",
+                                "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the waterproof rating of the TrailMaster X4 Tent's rainfly?\nanswer: The TrailMaster X4 Tent's rainfly has a waterproof rating of [relevant document]. \ud83c\udf27\ufe0f\ud83c\udfd5\ufe0f\n\nFor a complete camping setup, you might also consider the EcoFire Camping Stove \ud83d\udd25 and the SkyView 2-Person Tent \ud83c\udf1f. Happy camping! \ud83c\udfd5\ufe0f\ud83d\ude0a\n\n[relevant document]: catalog: 1, item: TrailMaster X4 Tent\nstars:"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "run",
+                        "__time": {
+                            "start": "2024-10-14T19:12:14.021151",
+                            "end": "2024-10-14T19:12:16.613326",
+                            "duration": 2592
+                        },
+                        "signature": "prompty.run",
+                        "description": "Run the prepared Prompty content against the model.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Coherence Evaluation",
+                                "description": "Evaluates coherence score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_deployment": "gpt-4-evals",
+                                        "api_version": "2023-07-01-preview"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 128,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "content": [
+                                {
+                                    "role": "system",
+                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                },
+                                {
+                                    "role": "user",
+                                    "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the waterproof rating of the TrailMaster X4 Tent's rainfly?\nanswer: The TrailMaster X4 Tent's rainfly has a waterproof rating of [relevant document]. \ud83c\udf27\ufe0f\ud83c\udfd5\ufe0f\n\nFor a complete camping setup, you might also consider the EcoFire Camping Stove \ud83d\udd25 and the SkyView 2-Person Tent \ud83c\udf1f. Happy camping! \ud83c\udfd5\ufe0f\ud83d\ude0a\n\n[relevant document]: catalog: 1, item: TrailMaster X4 Tent\nstars:"
+                                }
+                            ],
+                            "configuration": {
+                                "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                                "api_version": "2023-03-15-preview"
+                            },
+                            "parameters": {},
+                            "raw": false
+                        },
+                        "__frames": [
+                            {
+                                "name": "AzureOpenAIExecutor",
+                                "__time": {
+                                    "start": "2024-10-14T19:12:14.022068",
+                                    "end": "2024-10-14T19:12:16.613001",
+                                    "duration": 2590
+                                },
+                                "signature": "prompty.azure.executor.AzureOpenAIExecutor.invoke",
+                                "inputs": {
+                                    "data": [
+                                        {
+                                            "role": "system",
+                                            "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                        },
+                                        {
+                                            "role": "user",
+                                            "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the waterproof rating of the TrailMaster X4 Tent's rainfly?\nanswer: The TrailMaster X4 Tent's rainfly has a waterproof rating of [relevant document]. \ud83c\udf27\ufe0f\ud83c\udfd5\ufe0f\n\nFor a complete camping setup, you might also consider the EcoFire Camping Stove \ud83d\udd25 and the SkyView 2-Person Tent \ud83c\udf1f. Happy camping! \ud83c\udfd5\ufe0f\ud83d\ude0a\n\n[relevant document]: catalog: 1, item: TrailMaster X4 Tent\nstars:"
+                                        }
+                                    ]
+                                },
+                                "__frames": [
+                                    {
+                                        "name": "AzureOpenAI",
+                                        "__time": {
+                                            "start": "2024-10-14T19:12:14.022298",
+                                            "end": "2024-10-14T19:12:14.051446",
+                                            "duration": 29
+                                        },
+                                        "type": "LLM",
+                                        "signature": "AzureOpenAI.ctor",
+                                        "description": "Azure OpenAI Constructor",
+                                        "inputs": {
+                                            "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                                            "api_version": "2023-03-15-preview",
+                                            "azure_deployment": "gpt-4-evals",
+                                            "azure_ad_token_provider": "***********************************************************************"
+                                        },
+                                        "result": "<openai.lib.azure.AzureOpenAI object at 0x778013122950>"
+                                    },
+                                    {
+                                        "name": "create",
+                                        "__time": {
+                                            "start": "2024-10-14T19:12:14.051544",
+                                            "end": "2024-10-14T19:12:16.612811",
+                                            "duration": 2561
+                                        },
+                                        "type": "LLM",
+                                        "description": "Azure OpenAI Client",
+                                        "signature": "AzureOpenAI.chat.completions.create",
+                                        "inputs": {
+                                            "model": "gpt-4-evals",
+                                            "messages": [
+                                                {
+                                                    "role": "system",
+                                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                                },
+                                                {
+                                                    "role": "user",
+                                                    "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the waterproof rating of the TrailMaster X4 Tent's rainfly?\nanswer: The TrailMaster X4 Tent's rainfly has a waterproof rating of [relevant document]. \ud83c\udf27\ufe0f\ud83c\udfd5\ufe0f\n\nFor a complete camping setup, you might also consider the EcoFire Camping Stove \ud83d\udd25 and the SkyView 2-Person Tent \ud83c\udf1f. Happy camping! \ud83c\udfd5\ufe0f\ud83d\ude0a\n\n[relevant document]: catalog: 1, item: TrailMaster X4 Tent\nstars:"
+                                                }
+                                            ],
+                                            "max_tokens": 128,
+                                            "temperature": 0.2
+                                        },
+                                        "result": {
+                                            "id": "chatcmpl-AIKmGO6FTXTiauVYxQbbAVfytXr5u",
+                                            "choices": [
+                                                {
+                                                    "finish_reason": "stop",
+                                                    "index": 0,
+                                                    "logprobs": null,
+                                                    "message": {
+                                                        "content": "3",
+                                                        "refusal": null,
+                                                        "role": "assistant",
+                                                        "function_call": null,
+                                                        "tool_calls": null
+                                                    }
+                                                }
+                                            ],
+                                            "created": 1728933136,
+                                            "model": "gpt-4",
+                                            "object": "chat.completion",
+                                            "service_tier": null,
+                                            "system_fingerprint": "fp_811936bd4f",
+                                            "usage": {
+                                                "completion_tokens": 1,
+                                                "prompt_tokens": 573,
+                                                "total_tokens": 574,
+                                                "completion_tokens_details": null,
+                                                "prompt_tokens_details": null
+                                            }
+                                        },
+                                        "__usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 573,
+                                            "total_tokens": 574
+                                        }
+                                    }
+                                ],
+                                "result": {
+                                    "id": "chatcmpl-AIKmGO6FTXTiauVYxQbbAVfytXr5u",
+                                    "choices": [
+                                        {
+                                            "finish_reason": "stop",
+                                            "index": 0,
+                                            "logprobs": "None",
+                                            "message": {
+                                                "content": "3",
+                                                "refusal": "None",
+                                                "role": "assistant",
+                                                "function_call": "None",
+                                                "tool_calls": "None"
+                                            }
+                                        }
+                                    ],
+                                    "created": 1728933136,
+                                    "model": "gpt-4",
+                                    "object": "chat.completion",
+                                    "service_tier": "None",
+                                    "system_fingerprint": "fp_811936bd4f",
+                                    "usage": {
+                                        "completion_tokens": 1,
+                                        "prompt_tokens": 573,
+                                        "total_tokens": 574,
+                                        "completion_tokens_details": "****",
+                                        "prompt_tokens_details": "****"
+                                    }
+                                },
+                                "__usage": {
+                                    "completion_tokens": 2,
+                                    "prompt_tokens": 1146,
+                                    "total_tokens": 1148,
+                                    "completion_tokens_details": "****",
+                                    "prompt_tokens_details": "****"
+                                }
+                            },
+                            {
+                                "name": "AzureOpenAIProcessor",
+                                "__time": {
+                                    "start": "2024-10-14T19:12:16.613063",
+                                    "end": "2024-10-14T19:12:16.613283",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.azure.processor.AzureOpenAIProcessor.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "id": "chatcmpl-AIKmGO6FTXTiauVYxQbbAVfytXr5u",
+                                        "choices": [
+                                            {
+                                                "finish_reason": "stop",
+                                                "index": 0,
+                                                "logprobs": "None",
+                                                "message": {
+                                                    "content": "3",
+                                                    "refusal": "None",
+                                                    "role": "assistant",
+                                                    "function_call": "None",
+                                                    "tool_calls": "None"
+                                                }
+                                            }
+                                        ],
+                                        "created": 1728933136,
+                                        "model": "gpt-4",
+                                        "object": "chat.completion",
+                                        "service_tier": "None",
+                                        "system_fingerprint": "fp_811936bd4f",
+                                        "usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 573,
+                                            "total_tokens": 574,
+                                            "completion_tokens_details": "****",
+                                            "prompt_tokens_details": "****"
+                                        }
+                                    }
+                                },
+                                "result": "3"
+                            }
+                        ],
+                        "result": "3",
+                        "__usage": {
+                            "completion_tokens": 2,
+                            "prompt_tokens": 1146,
+                            "total_tokens": 1148,
+                            "completion_tokens_details": "****",
+                            "prompt_tokens_details": "****"
+                        }
+                    }
+                ],
+                "result": "3",
+                "__usage": {
+                    "completion_tokens": 2,
+                    "prompt_tokens": 1146,
+                    "total_tokens": 1148,
+                    "completion_tokens_details": "****",
+                    "prompt_tokens_details": "****"
+                }
+            }
+        ],
+        "result": "3",
+        "__usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 1146,
+            "total_tokens": 1148,
+            "completion_tokens_details": "****",
+            "prompt_tokens_details": "****"
+        }
+    }
+}

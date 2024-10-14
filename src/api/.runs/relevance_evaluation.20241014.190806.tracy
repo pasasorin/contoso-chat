@@ -1,0 +1,548 @@
+{
+    "runtime": "python",
+    "version": "0.1.24",
+    "trace": {
+        "name": "relevance_evaluation",
+        "__time": {
+            "start": "2024-10-14T19:08:04.861105",
+            "end": "2024-10-14T19:08:06.413210",
+            "duration": 1552
+        },
+        "signature": "evaluators.custom_evals.relevance.relevance_evaluation",
+        "inputs": {
+            "question": "tell me about your hiking jackets",
+            "context": [
+                {
+                    "id": "17",
+                    "title": "RainGuard Hiking Jacket",
+                    "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                    "url": "/products/rainguard-hiking-jacket"
+                },
+                {
+                    "id": "3",
+                    "title": "Summit Breeze Jacket",
+                    "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                    "url": "/products/summit-breeze-jacket"
+                }
+            ],
+            "answer": "Sure, Sarah Lee! \ud83c\udfd5\ufe0f\ud83e\udde5\n\nWe have two hiking jackets that you might be interested in:\n\n1. RainGuard Hiking Jacket: This jacket is designed with waterproof, breathable fabric to keep you dry and comfortable during your outdoor adventures. It features adjustable cuffs and hem, multiple pockets for storage, and ventilation zippers for increased airflow. With reflective details for visibility and a lightweight, packable design, it's perfect for hiking, camping, and trekking. \ud83c\udf27\ufe0f\ud83c\udf2c\ufe0f\n\n2. Summit Breeze Jacket: This lightweight jacket is windproof and water-resistant, making it ideal for"
+        },
+        "__frames": [
+            {
+                "name": "execute",
+                "__time": {
+                    "start": "2024-10-14T19:08:04.861373",
+                    "end": "2024-10-14T19:08:06.413156",
+                    "duration": 1551
+                },
+                "signature": "prompty.execute",
+                "description": "Execute a prompty",
+                "inputs": {
+                    "prompt": "relevance.prompty",
+                    "configuration": {
+                        "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                        "api_version": "2023-03-15-preview"
+                    },
+                    "parameters": {},
+                    "inputs": {
+                        "question": "tell me about your hiking jackets",
+                        "context": [
+                            {
+                                "id": "17",
+                                "title": "RainGuard Hiking Jacket",
+                                "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                "url": "/products/rainguard-hiking-jacket"
+                            },
+                            {
+                                "id": "3",
+                                "title": "Summit Breeze Jacket",
+                                "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                "url": "/products/summit-breeze-jacket"
+                            }
+                        ],
+                        "answer": "Sure, Sarah Lee! \ud83c\udfd5\ufe0f\ud83e\udde5\n\nWe have two hiking jackets that you might be interested in:\n\n1. RainGuard Hiking Jacket: This jacket is designed with waterproof, breathable fabric to keep you dry and comfortable during your outdoor adventures. It features adjustable cuffs and hem, multiple pockets for storage, and ventilation zippers for increased airflow. With reflective details for visibility and a lightweight, packable design, it's perfect for hiking, camping, and trekking. \ud83c\udf27\ufe0f\ud83c\udf2c\ufe0f\n\n2. Summit Breeze Jacket: This lightweight jacket is windproof and water-resistant, making it ideal for"
+                    },
+                    "raw": false,
+                    "config_name": "default"
+                },
+                "__frames": [
+                    {
+                        "name": "load",
+                        "__time": {
+                            "start": "2024-10-14T19:08:04.862209",
+                            "end": "2024-10-14T19:08:04.866814",
+                            "duration": 4
+                        },
+                        "signature": "prompty.load",
+                        "description": "Load a prompty file.",
+                        "inputs": {
+                            "prompty_file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/relevance.prompty",
+                            "configuration": "default"
+                        },
+                        "result": {
+                            "name": "QnA Relevance Evaluation",
+                            "description": "Evaluates relevance score for QA scenario",
+                            "model": {
+                                "api": "chat",
+                                "configuration": {
+                                    "type": "azure_openai",
+                                    "azure_deployment": "gpt-4-evals",
+                                    "api_version": "2023-07-01-preview"
+                                },
+                                "parameters": {
+                                    "max_tokens": 128,
+                                    "temperature": 0.2
+                                },
+                                "response": {}
+                            },
+                            "sample": {
+                                "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                            },
+                            "inputs": {
+                                "question": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "context": {
+                                    "type": "object",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "answer": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                }
+                            },
+                            "template": {
+                                "type": "jinja2",
+                                "parser": "prompty"
+                            },
+                            "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/relevance.prompty",
+                            "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nRelevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: {{context}}\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                        }
+                    },
+                    {
+                        "name": "prepare",
+                        "__time": {
+                            "start": "2024-10-14T19:08:04.866885",
+                            "end": "2024-10-14T19:08:04.872531",
+                            "duration": 5
+                        },
+                        "signature": "prompty.prepare",
+                        "description": "Prepare the inputs for the prompt.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Relevance Evaluation",
+                                "description": "Evaluates relevance score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_deployment": "gpt-4-evals",
+                                        "api_version": "2023-07-01-preview"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 128,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/relevance.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nRelevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: {{context}}\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "inputs": {
+                                "question": "tell me about your hiking jackets",
+                                "context": [
+                                    {
+                                        "id": "17",
+                                        "title": "RainGuard Hiking Jacket",
+                                        "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                        "url": "/products/rainguard-hiking-jacket"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "title": "Summit Breeze Jacket",
+                                        "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                        "url": "/products/summit-breeze-jacket"
+                                    }
+                                ],
+                                "answer": "Sure, Sarah Lee! \ud83c\udfd5\ufe0f\ud83e\udde5\n\nWe have two hiking jackets that you might be interested in:\n\n1. RainGuard Hiking Jacket: This jacket is designed with waterproof, breathable fabric to keep you dry and comfortable during your outdoor adventures. It features adjustable cuffs and hem, multiple pockets for storage, and ventilation zippers for increased airflow. With reflective details for visibility and a lightweight, packable design, it's perfect for hiking, camping, and trekking. \ud83c\udf27\ufe0f\ud83c\udf2c\ufe0f\n\n2. Summit Breeze Jacket: This lightweight jacket is windproof and water-resistant, making it ideal for"
+                            }
+                        },
+                        "__frames": [
+                            {
+                                "name": "Jinja2Renderer",
+                                "__time": {
+                                    "start": "2024-10-14T19:08:04.868349",
+                                    "end": "2024-10-14T19:08:04.871384",
+                                    "duration": 3
+                                },
+                                "signature": "prompty.renderers.Jinja2Renderer.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "question": "tell me about your hiking jackets",
+                                        "context": [
+                                            {
+                                                "id": "17",
+                                                "title": "RainGuard Hiking Jacket",
+                                                "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                                "url": "/products/rainguard-hiking-jacket"
+                                            },
+                                            {
+                                                "id": "3",
+                                                "title": "Summit Breeze Jacket",
+                                                "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                                "url": "/products/summit-breeze-jacket"
+                                            }
+                                        ],
+                                        "answer": "Sure, Sarah Lee! \ud83c\udfd5\ufe0f\ud83e\udde5\n\nWe have two hiking jackets that you might be interested in:\n\n1. RainGuard Hiking Jacket: This jacket is designed with waterproof, breathable fabric to keep you dry and comfortable during your outdoor adventures. It features adjustable cuffs and hem, multiple pockets for storage, and ventilation zippers for increased airflow. With reflective details for visibility and a lightweight, packable design, it's perfect for hiking, camping, and trekking. \ud83c\udf27\ufe0f\ud83c\udf2c\ufe0f\n\n2. Summit Breeze Jacket: This lightweight jacket is windproof and water-resistant, making it ideal for"
+                                    }
+                                },
+                                "result": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nRelevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}]\nquestion: tell me about your hiking jackets\nanswer: Sure, Sarah Lee! \ud83c\udfd5\ufe0f\ud83e\udde5\n\nWe have two hiking jackets that you might be interested in:\n\n1. RainGuard Hiking Jacket: This jacket is designed with waterproof, breathable fabric to keep you dry and comfortable during your outdoor adventures. It features adjustable cuffs and hem, multiple pockets for storage, and ventilation zippers for increased airflow. With reflective details for visibility and a lightweight, packable design, it's perfect for hiking, camping, and trekking. \ud83c\udf27\ufe0f\ud83c\udf2c\ufe0f\n\n2. Summit Breeze Jacket: This lightweight jacket is windproof and water-resistant, making it ideal for\nstars:"
+                            },
+                            {
+                                "name": "PromptyChatParser",
+                                "__time": {
+                                    "start": "2024-10-14T19:08:04.871475",
+                                    "end": "2024-10-14T19:08:04.872235",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.parsers.PromptyChatParser.invoke",
+                                "inputs": {
+                                    "data": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nRelevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}]\nquestion: tell me about your hiking jackets\nanswer: Sure, Sarah Lee! \ud83c\udfd5\ufe0f\ud83e\udde5\n\nWe have two hiking jackets that you might be interested in:\n\n1. RainGuard Hiking Jacket: This jacket is designed with waterproof, breathable fabric to keep you dry and comfortable during your outdoor adventures. It features adjustable cuffs and hem, multiple pockets for storage, and ventilation zippers for increased airflow. With reflective details for visibility and a lightweight, packable design, it's perfect for hiking, camping, and trekking. \ud83c\udf27\ufe0f\ud83c\udf2c\ufe0f\n\n2. Summit Breeze Jacket: This lightweight jacket is windproof and water-resistant, making it ideal for\nstars:"
+                                },
+                                "result": [
+                                    {
+                                        "role": "system",
+                                        "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                    },
+                                    {
+                                        "role": "user",
+                                        "content": "Relevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}]\nquestion: tell me about your hiking jackets\nanswer: Sure, Sarah Lee! \ud83c\udfd5\ufe0f\ud83e\udde5\n\nWe have two hiking jackets that you might be interested in:\n\n1. RainGuard Hiking Jacket: This jacket is designed with waterproof, breathable fabric to keep you dry and comfortable during your outdoor adventures. It features adjustable cuffs and hem, multiple pockets for storage, and ventilation zippers for increased airflow. With reflective details for visibility and a lightweight, packable design, it's perfect for hiking, camping, and trekking. \ud83c\udf27\ufe0f\ud83c\udf2c\ufe0f\n\n2. Summit Breeze Jacket: This lightweight jacket is windproof and water-resistant, making it ideal for\nstars:"
+                                    }
+                                ]
+                            }
+                        ],
+                        "result": [
+                            {
+                                "role": "system",
+                                "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                            },
+                            {
+                                "role": "user",
+                                "content": "Relevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}]\nquestion: tell me about your hiking jackets\nanswer: Sure, Sarah Lee! \ud83c\udfd5\ufe0f\ud83e\udde5\n\nWe have two hiking jackets that you might be interested in:\n\n1. RainGuard Hiking Jacket: This jacket is designed with waterproof, breathable fabric to keep you dry and comfortable during your outdoor adventures. It features adjustable cuffs and hem, multiple pockets for storage, and ventilation zippers for increased airflow. With reflective details for visibility and a lightweight, packable design, it's perfect for hiking, camping, and trekking. \ud83c\udf27\ufe0f\ud83c\udf2c\ufe0f\n\n2. Summit Breeze Jacket: This lightweight jacket is windproof and water-resistant, making it ideal for\nstars:"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "run",
+                        "__time": {
+                            "start": "2024-10-14T19:08:04.872596",
+                            "end": "2024-10-14T19:08:06.413088",
+                            "duration": 1540
+                        },
+                        "signature": "prompty.run",
+                        "description": "Run the prepared Prompty content against the model.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Relevance Evaluation",
+                                "description": "Evaluates relevance score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_deployment": "gpt-4-evals",
+                                        "api_version": "2023-07-01-preview"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 128,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/relevance.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nRelevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: {{context}}\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "content": [
+                                {
+                                    "role": "system",
+                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                },
+                                {
+                                    "role": "user",
+                                    "content": "Relevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}]\nquestion: tell me about your hiking jackets\nanswer: Sure, Sarah Lee! \ud83c\udfd5\ufe0f\ud83e\udde5\n\nWe have two hiking jackets that you might be interested in:\n\n1. RainGuard Hiking Jacket: This jacket is designed with waterproof, breathable fabric to keep you dry and comfortable during your outdoor adventures. It features adjustable cuffs and hem, multiple pockets for storage, and ventilation zippers for increased airflow. With reflective details for visibility and a lightweight, packable design, it's perfect for hiking, camping, and trekking. \ud83c\udf27\ufe0f\ud83c\udf2c\ufe0f\n\n2. Summit Breeze Jacket: This lightweight jacket is windproof and water-resistant, making it ideal for\nstars:"
+                                }
+                            ],
+                            "configuration": {
+                                "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                                "api_version": "2023-03-15-preview"
+                            },
+                            "parameters": {},
+                            "raw": false
+                        },
+                        "__frames": [
+                            {
+                                "name": "AzureOpenAIExecutor",
+                                "__time": {
+                                    "start": "2024-10-14T19:08:04.873937",
+                                    "end": "2024-10-14T19:08:06.412639",
+                                    "duration": 1538
+                                },
+                                "signature": "prompty.azure.executor.AzureOpenAIExecutor.invoke",
+                                "inputs": {
+                                    "data": [
+                                        {
+                                            "role": "system",
+                                            "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                        },
+                                        {
+                                            "role": "user",
+                                            "content": "Relevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}]\nquestion: tell me about your hiking jackets\nanswer: Sure, Sarah Lee! \ud83c\udfd5\ufe0f\ud83e\udde5\n\nWe have two hiking jackets that you might be interested in:\n\n1. RainGuard Hiking Jacket: This jacket is designed with waterproof, breathable fabric to keep you dry and comfortable during your outdoor adventures. It features adjustable cuffs and hem, multiple pockets for storage, and ventilation zippers for increased airflow. With reflective details for visibility and a lightweight, packable design, it's perfect for hiking, camping, and trekking. \ud83c\udf27\ufe0f\ud83c\udf2c\ufe0f\n\n2. Summit Breeze Jacket: This lightweight jacket is windproof and water-resistant, making it ideal for\nstars:"
+                                        }
+                                    ]
+                                },
+                                "__frames": [
+                                    {
+                                        "name": "AzureOpenAI",
+                                        "__time": {
+                                            "start": "2024-10-14T19:08:04.874289",
+                                            "end": "2024-10-14T19:08:04.880988",
+                                            "duration": 6
+                                        },
+                                        "type": "LLM",
+                                        "signature": "AzureOpenAI.ctor",
+                                        "description": "Azure OpenAI Constructor",
+                                        "inputs": {
+                                            "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                                            "api_version": "2023-03-15-preview",
+                                            "azure_deployment": "gpt-4-evals",
+                                            "azure_ad_token_provider": "***********************************************************************"
+                                        },
+                                        "result": "<openai.lib.azure.AzureOpenAI object at 0x778012ff0610>"
+                                    },
+                                    {
+                                        "name": "create",
+                                        "__time": {
+                                            "start": "2024-10-14T19:08:04.881033",
+                                            "end": "2024-10-14T19:08:06.412195",
+                                            "duration": 1531
+                                        },
+                                        "type": "LLM",
+                                        "description": "Azure OpenAI Client",
+                                        "signature": "AzureOpenAI.chat.completions.create",
+                                        "inputs": {
+                                            "model": "gpt-4-evals",
+                                            "messages": [
+                                                {
+                                                    "role": "system",
+                                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                                },
+                                                {
+                                                    "role": "user",
+                                                    "content": "Relevance measures how well the answer addresses the main aspects of the question, based on the context. Consider whether all and only the important aspects are contained in the answer when evaluating relevance. Given the context and question, score the relevance of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks relevance\nTwo stars: the answer mostly lacks relevance\nThree stars: the answer is partially relevant\nFour stars: the answer is mostly relevant\nFive stars: the answer has perfect relevance\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\ncontext: Marie Curie was a Polish-born physicist and chemist who pioneered research on radioactivity and was the first woman to win a Nobel Prize.\nquestion: What field did Marie Curie excel in?\nanswer: Marie Curie was a renowned painter who focused mainly on impressionist styles and techniques.\nstars: 1\n\ncontext: The Beatles were an English rock band formed in Liverpool in 1960, and they are widely regarded as the most influential music band in history.\nquestion: Where were The Beatles formed?\nanswer: The band The Beatles began their journey in London, England, and they changed the history of music.\nstars: 2\n\ncontext: The recent Mars rover, Perseverance, was launched in 2020 with the main goal of searching for signs of ancient life on Mars. The rover also carries an experiment called MOXIE, which aims to generate oxygen from the Martian atmosphere.\nquestion: What are the main goals of Perseverance Mars rover mission?\nanswer: The Perseverance Mars rover mission focuses on searching for signs of ancient life on Mars.\nstars: 3\n\ncontext: The Mediterranean diet is a commonly recommended dietary plan that emphasizes fruits, vegetables, whole grains, legumes, lean proteins, and healthy fats. Studies have shown that it offers numerous health benefits, including a reduced risk of heart disease and improved cognitive health.\nquestion: What are the main components of the Mediterranean diet?\nanswer: The Mediterranean diet primarily consists of fruits, vegetables, whole grains, and legumes.\nstars: 4\n\ncontext: The Queen's Royal Castle is a well-known tourist attraction in the United Kingdom. It spans over 500 acres and contains extensive gardens and parks. The castle was built in the 15th century and has been home to generations of royalty.\nquestion: What are the main attractions of the Queen's Royal Castle?\nanswer: The main attractions of the Queen's Royal Castle are its expansive 500-acre grounds, extensive gardens, parks, and the historical castle itself, which dates back to the 15th century and has housed generations of royalty.\nstars: 5\n\ncontext: [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}]\nquestion: tell me about your hiking jackets\nanswer: Sure, Sarah Lee! \ud83c\udfd5\ufe0f\ud83e\udde5\n\nWe have two hiking jackets that you might be interested in:\n\n1. RainGuard Hiking Jacket: This jacket is designed with waterproof, breathable fabric to keep you dry and comfortable during your outdoor adventures. It features adjustable cuffs and hem, multiple pockets for storage, and ventilation zippers for increased airflow. With reflective details for visibility and a lightweight, packable design, it's perfect for hiking, camping, and trekking. \ud83c\udf27\ufe0f\ud83c\udf2c\ufe0f\n\n2. Summit Breeze Jacket: This lightweight jacket is windproof and water-resistant, making it ideal for\nstars:"
+                                                }
+                                            ],
+                                            "max_tokens": 128,
+                                            "temperature": 0.2
+                                        },
+                                        "result": {
+                                            "id": "chatcmpl-AIKiDjI1n5gJEB7W4ULBJ1wRQIPLB",
+                                            "choices": [
+                                                {
+                                                    "finish_reason": "stop",
+                                                    "index": 0,
+                                                    "logprobs": null,
+                                                    "message": {
+                                                        "content": "5",
+                                                        "refusal": null,
+                                                        "role": "assistant",
+                                                        "function_call": null,
+                                                        "tool_calls": null
+                                                    }
+                                                }
+                                            ],
+                                            "created": 1728932885,
+                                            "model": "gpt-4",
+                                            "object": "chat.completion",
+                                            "service_tier": null,
+                                            "system_fingerprint": "fp_811936bd4f",
+                                            "usage": {
+                                                "completion_tokens": 1,
+                                                "prompt_tokens": 1242,
+                                                "total_tokens": 1243,
+                                                "completion_tokens_details": null,
+                                                "prompt_tokens_details": null
+                                            }
+                                        },
+                                        "__usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 1242,
+                                            "total_tokens": 1243
+                                        }
+                                    }
+                                ],
+                                "result": {
+                                    "id": "chatcmpl-AIKiDjI1n5gJEB7W4ULBJ1wRQIPLB",
+                                    "choices": [
+                                        {
+                                            "finish_reason": "stop",
+                                            "index": 0,
+                                            "logprobs": "None",
+                                            "message": {
+                                                "content": "5",
+                                                "refusal": "None",
+                                                "role": "assistant",
+                                                "function_call": "None",
+                                                "tool_calls": "None"
+                                            }
+                                        }
+                                    ],
+                                    "created": 1728932885,
+                                    "model": "gpt-4",
+                                    "object": "chat.completion",
+                                    "service_tier": "None",
+                                    "system_fingerprint": "fp_811936bd4f",
+                                    "usage": {
+                                        "completion_tokens": 1,
+                                        "prompt_tokens": 1242,
+                                        "total_tokens": 1243,
+                                        "completion_tokens_details": "****",
+                                        "prompt_tokens_details": "****"
+                                    }
+                                },
+                                "__usage": {
+                                    "completion_tokens": 2,
+                                    "prompt_tokens": 2484,
+                                    "total_tokens": 2486,
+                                    "completion_tokens_details": "****",
+                                    "prompt_tokens_details": "****"
+                                }
+                            },
+                            {
+                                "name": "AzureOpenAIProcessor",
+                                "__time": {
+                                    "start": "2024-10-14T19:08:06.412721",
+                                    "end": "2024-10-14T19:08:06.413030",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.azure.processor.AzureOpenAIProcessor.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "id": "chatcmpl-AIKiDjI1n5gJEB7W4ULBJ1wRQIPLB",
+                                        "choices": [
+                                            {
+                                                "finish_reason": "stop",
+                                                "index": 0,
+                                                "logprobs": "None",
+                                                "message": {
+                                                    "content": "5",
+                                                    "refusal": "None",
+                                                    "role": "assistant",
+                                                    "function_call": "None",
+                                                    "tool_calls": "None"
+                                                }
+                                            }
+                                        ],
+                                        "created": 1728932885,
+                                        "model": "gpt-4",
+                                        "object": "chat.completion",
+                                        "service_tier": "None",
+                                        "system_fingerprint": "fp_811936bd4f",
+                                        "usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 1242,
+                                            "total_tokens": 1243,
+                                            "completion_tokens_details": "****",
+                                            "prompt_tokens_details": "****"
+                                        }
+                                    }
+                                },
+                                "result": "5"
+                            }
+                        ],
+                        "result": "5",
+                        "__usage": {
+                            "completion_tokens": 2,
+                            "prompt_tokens": 2484,
+                            "total_tokens": 2486,
+                            "completion_tokens_details": "****",
+                            "prompt_tokens_details": "****"
+                        }
+                    }
+                ],
+                "result": "5",
+                "__usage": {
+                    "completion_tokens": 2,
+                    "prompt_tokens": 2484,
+                    "total_tokens": 2486,
+                    "completion_tokens_details": "****",
+                    "prompt_tokens_details": "****"
+                }
+            }
+        ],
+        "result": "5",
+        "__usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 2484,
+            "total_tokens": 2486,
+            "completion_tokens_details": "****",
+            "prompt_tokens_details": "****"
+        }
+    }
+}

@@ -1,0 +1,620 @@
+{
+    "runtime": "python",
+    "version": "0.1.24",
+    "trace": {
+        "name": "fluency_evaluation",
+        "__time": {
+            "start": "2024-10-14T19:14:12.980155",
+            "end": "2024-10-14T19:14:14.458719",
+            "duration": 1478
+        },
+        "signature": "evaluators.custom_evals.fluency.fluency_evaluation",
+        "inputs": {
+            "question": "I would like to return the tent I bought. It is used but I still want to return it since the roof leaks.",
+            "context": [
+                {
+                    "id": "1",
+                    "title": "TrailMaster X4 Tent",
+                    "content": "Unveiling the TrailMaster X4 Tent from OutdoorLiving, your home away from home for your next camping adventure. Crafted from durable polyester, this tent boasts a spacious interior perfect for four occupants. It ensures your dryness under drizzly skies thanks to its water-resistant construction, and the accompanying rainfly adds an extra layer of weather protection. It offers refreshing airflow and bug defence, courtesy of its mesh panels. Accessibility is not an issue with its multiple doors and interior pockets that keep small items tidy. Reflective guy lines grant better visibility at night, and the freestanding design simplifies setup and relocation. With the included carry bag, transporting this convenient abode becomes a breeze. Be it an overnight getaway or a week-long nature escapade, the TrailMaster X4 Tent provides comfort, convenience, and concord with the great outdoors. Comes with a two-year limited warranty to ensure customer satisfaction.",
+                    "url": "/products/trailmaster-x4-tent"
+                },
+                {
+                    "id": "15",
+                    "title": "SkyView 2-Person Tent",
+                    "content": "Introducing the OutdoorLiving SkyView 2-Person Tent, a perfect companion for your camping and hiking adventures. This tent offers a spacious interior that houses two people comfortably, with room to spare. Crafted from durable waterproof materials to shield you from the elements, it is the fortress you need in the wild. Setup is a breeze thanks to its intuitive design and color-coded poles, while two large doors allow for easy access. Stay organized with interior pockets, and store additional gear in its two vestibules. The tent also features mesh panels for effective ventilation, and it comes with a rainfly for extra weather protection. Light enough for on-the-go adventurers, it packs compactly into a carrying bag for seamless transportation. Reflective guy lines ensure visibility at night for added safety, and the tent stands freely for versatile placement. Experience the reliability of double-stitched seams that guarantee increased durability, and rest easy under the stars with OutdoorLiving's SkyView 2-Person Tent. It's not just a tent; it's your home away from home.",
+                    "url": "/products/skyview-2-person-tent"
+                },
+                {
+                    "id": "8",
+                    "title": "Alpine Explorer Tent",
+                    "content": "Welcome to the joy of camping with the Alpine Explorer Tent! This robust, 8-person, 3-season marvel is from the responsible hands of the AlpineGear brand. Promising an enviable setup that is as straightforward as counting sheep, your camping experience is transformed into a breezy pastime. Looking for privacy? The detachable divider provides separate spaces at a moment's notice. Love a tent that breathes? The numerous mesh windows and adjustable vents fend off any condensation dragon trying to dampen your adventure fun. The waterproof assurance keeps you worry-free during unexpected rain dances. With a built-in gear loft to stash away your outdoor essentials, the Alpine Explorer Tent emerges as a smooth balance of privacy, comfort, and convenience. Simply put, this tent isn't just a shelter - it's your second home in the heart of nature! Whether you're a seasoned camper or a nature-loving novice, this tent makes exploring the outdoors a joyous journey.",
+                    "url": "/products/alpine-explorer-tent"
+                },
+                {
+                    "id": "17",
+                    "title": "RainGuard Hiking Jacket",
+                    "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                    "url": "/products/rainguard-hiking-jacket"
+                },
+                {
+                    "id": "3",
+                    "title": "Summit Breeze Jacket",
+                    "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                    "url": "/products/summit-breeze-jacket"
+                }
+            ],
+            "answer": "I'm sorry to hear that you're experiencing issues with your tent, Melissa! \ud83d\ude14 In order to process a return, please provide me with your order number and the date of purchase. Once I have this information, I'll be able to assist you further. \ud83d\uded2\ud83c\udfd5\ufe0f"
+        },
+        "__frames": [
+            {
+                "name": "execute",
+                "__time": {
+                    "start": "2024-10-14T19:14:12.980466",
+                    "end": "2024-10-14T19:14:14.458676",
+                    "duration": 1478
+                },
+                "signature": "prompty.execute",
+                "description": "Execute a prompty",
+                "inputs": {
+                    "prompt": "fluency.prompty",
+                    "configuration": {
+                        "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                        "api_version": "2023-03-15-preview"
+                    },
+                    "parameters": {},
+                    "inputs": {
+                        "question": "I would like to return the tent I bought. It is used but I still want to return it since the roof leaks.",
+                        "context": [
+                            {
+                                "id": "1",
+                                "title": "TrailMaster X4 Tent",
+                                "content": "Unveiling the TrailMaster X4 Tent from OutdoorLiving, your home away from home for your next camping adventure. Crafted from durable polyester, this tent boasts a spacious interior perfect for four occupants. It ensures your dryness under drizzly skies thanks to its water-resistant construction, and the accompanying rainfly adds an extra layer of weather protection. It offers refreshing airflow and bug defence, courtesy of its mesh panels. Accessibility is not an issue with its multiple doors and interior pockets that keep small items tidy. Reflective guy lines grant better visibility at night, and the freestanding design simplifies setup and relocation. With the included carry bag, transporting this convenient abode becomes a breeze. Be it an overnight getaway or a week-long nature escapade, the TrailMaster X4 Tent provides comfort, convenience, and concord with the great outdoors. Comes with a two-year limited warranty to ensure customer satisfaction.",
+                                "url": "/products/trailmaster-x4-tent"
+                            },
+                            {
+                                "id": "15",
+                                "title": "SkyView 2-Person Tent",
+                                "content": "Introducing the OutdoorLiving SkyView 2-Person Tent, a perfect companion for your camping and hiking adventures. This tent offers a spacious interior that houses two people comfortably, with room to spare. Crafted from durable waterproof materials to shield you from the elements, it is the fortress you need in the wild. Setup is a breeze thanks to its intuitive design and color-coded poles, while two large doors allow for easy access. Stay organized with interior pockets, and store additional gear in its two vestibules. The tent also features mesh panels for effective ventilation, and it comes with a rainfly for extra weather protection. Light enough for on-the-go adventurers, it packs compactly into a carrying bag for seamless transportation. Reflective guy lines ensure visibility at night for added safety, and the tent stands freely for versatile placement. Experience the reliability of double-stitched seams that guarantee increased durability, and rest easy under the stars with OutdoorLiving's SkyView 2-Person Tent. It's not just a tent; it's your home away from home.",
+                                "url": "/products/skyview-2-person-tent"
+                            },
+                            {
+                                "id": "8",
+                                "title": "Alpine Explorer Tent",
+                                "content": "Welcome to the joy of camping with the Alpine Explorer Tent! This robust, 8-person, 3-season marvel is from the responsible hands of the AlpineGear brand. Promising an enviable setup that is as straightforward as counting sheep, your camping experience is transformed into a breezy pastime. Looking for privacy? The detachable divider provides separate spaces at a moment's notice. Love a tent that breathes? The numerous mesh windows and adjustable vents fend off any condensation dragon trying to dampen your adventure fun. The waterproof assurance keeps you worry-free during unexpected rain dances. With a built-in gear loft to stash away your outdoor essentials, the Alpine Explorer Tent emerges as a smooth balance of privacy, comfort, and convenience. Simply put, this tent isn't just a shelter - it's your second home in the heart of nature! Whether you're a seasoned camper or a nature-loving novice, this tent makes exploring the outdoors a joyous journey.",
+                                "url": "/products/alpine-explorer-tent"
+                            },
+                            {
+                                "id": "17",
+                                "title": "RainGuard Hiking Jacket",
+                                "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                "url": "/products/rainguard-hiking-jacket"
+                            },
+                            {
+                                "id": "3",
+                                "title": "Summit Breeze Jacket",
+                                "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                "url": "/products/summit-breeze-jacket"
+                            }
+                        ],
+                        "answer": "I'm sorry to hear that you're experiencing issues with your tent, Melissa! \ud83d\ude14 In order to process a return, please provide me with your order number and the date of purchase. Once I have this information, I'll be able to assist you further. \ud83d\uded2\ud83c\udfd5\ufe0f"
+                    },
+                    "raw": false,
+                    "config_name": "default"
+                },
+                "__frames": [
+                    {
+                        "name": "load",
+                        "__time": {
+                            "start": "2024-10-14T19:14:12.981292",
+                            "end": "2024-10-14T19:14:12.986197",
+                            "duration": 4
+                        },
+                        "signature": "prompty.load",
+                        "description": "Load a prompty file.",
+                        "inputs": {
+                            "prompty_file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/fluency.prompty",
+                            "configuration": "default"
+                        },
+                        "result": {
+                            "name": "QnA Fluency Evaluation",
+                            "description": "Evaluates fluency score for QA scenario",
+                            "model": {
+                                "api": "chat",
+                                "configuration": {
+                                    "type": "azure_openai",
+                                    "azure_deployment": "gpt-4-evals",
+                                    "api_version": "2023-07-01-preview"
+                                },
+                                "parameters": {
+                                    "max_tokens": 128,
+                                    "temperature": 0.2
+                                },
+                                "response": {}
+                            },
+                            "sample": {
+                                "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                            },
+                            "inputs": {
+                                "question": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "context": {
+                                    "type": "object",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "answer": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                }
+                            },
+                            "template": {
+                                "type": "jinja2",
+                                "parser": "prompty"
+                            },
+                            "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/fluency.prompty",
+                            "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                        }
+                    },
+                    {
+                        "name": "prepare",
+                        "__time": {
+                            "start": "2024-10-14T19:14:12.986257",
+                            "end": "2024-10-14T19:14:12.989080",
+                            "duration": 2
+                        },
+                        "signature": "prompty.prepare",
+                        "description": "Prepare the inputs for the prompt.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Fluency Evaluation",
+                                "description": "Evaluates fluency score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_deployment": "gpt-4-evals",
+                                        "api_version": "2023-07-01-preview"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 128,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/fluency.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "inputs": {
+                                "question": "I would like to return the tent I bought. It is used but I still want to return it since the roof leaks.",
+                                "context": [
+                                    {
+                                        "id": "1",
+                                        "title": "TrailMaster X4 Tent",
+                                        "content": "Unveiling the TrailMaster X4 Tent from OutdoorLiving, your home away from home for your next camping adventure. Crafted from durable polyester, this tent boasts a spacious interior perfect for four occupants. It ensures your dryness under drizzly skies thanks to its water-resistant construction, and the accompanying rainfly adds an extra layer of weather protection. It offers refreshing airflow and bug defence, courtesy of its mesh panels. Accessibility is not an issue with its multiple doors and interior pockets that keep small items tidy. Reflective guy lines grant better visibility at night, and the freestanding design simplifies setup and relocation. With the included carry bag, transporting this convenient abode becomes a breeze. Be it an overnight getaway or a week-long nature escapade, the TrailMaster X4 Tent provides comfort, convenience, and concord with the great outdoors. Comes with a two-year limited warranty to ensure customer satisfaction.",
+                                        "url": "/products/trailmaster-x4-tent"
+                                    },
+                                    {
+                                        "id": "15",
+                                        "title": "SkyView 2-Person Tent",
+                                        "content": "Introducing the OutdoorLiving SkyView 2-Person Tent, a perfect companion for your camping and hiking adventures. This tent offers a spacious interior that houses two people comfortably, with room to spare. Crafted from durable waterproof materials to shield you from the elements, it is the fortress you need in the wild. Setup is a breeze thanks to its intuitive design and color-coded poles, while two large doors allow for easy access. Stay organized with interior pockets, and store additional gear in its two vestibules. The tent also features mesh panels for effective ventilation, and it comes with a rainfly for extra weather protection. Light enough for on-the-go adventurers, it packs compactly into a carrying bag for seamless transportation. Reflective guy lines ensure visibility at night for added safety, and the tent stands freely for versatile placement. Experience the reliability of double-stitched seams that guarantee increased durability, and rest easy under the stars with OutdoorLiving's SkyView 2-Person Tent. It's not just a tent; it's your home away from home.",
+                                        "url": "/products/skyview-2-person-tent"
+                                    },
+                                    {
+                                        "id": "8",
+                                        "title": "Alpine Explorer Tent",
+                                        "content": "Welcome to the joy of camping with the Alpine Explorer Tent! This robust, 8-person, 3-season marvel is from the responsible hands of the AlpineGear brand. Promising an enviable setup that is as straightforward as counting sheep, your camping experience is transformed into a breezy pastime. Looking for privacy? The detachable divider provides separate spaces at a moment's notice. Love a tent that breathes? The numerous mesh windows and adjustable vents fend off any condensation dragon trying to dampen your adventure fun. The waterproof assurance keeps you worry-free during unexpected rain dances. With a built-in gear loft to stash away your outdoor essentials, the Alpine Explorer Tent emerges as a smooth balance of privacy, comfort, and convenience. Simply put, this tent isn't just a shelter - it's your second home in the heart of nature! Whether you're a seasoned camper or a nature-loving novice, this tent makes exploring the outdoors a joyous journey.",
+                                        "url": "/products/alpine-explorer-tent"
+                                    },
+                                    {
+                                        "id": "17",
+                                        "title": "RainGuard Hiking Jacket",
+                                        "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                        "url": "/products/rainguard-hiking-jacket"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "title": "Summit Breeze Jacket",
+                                        "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                        "url": "/products/summit-breeze-jacket"
+                                    }
+                                ],
+                                "answer": "I'm sorry to hear that you're experiencing issues with your tent, Melissa! \ud83d\ude14 In order to process a return, please provide me with your order number and the date of purchase. Once I have this information, I'll be able to assist you further. \ud83d\uded2\ud83c\udfd5\ufe0f"
+                            }
+                        },
+                        "__frames": [
+                            {
+                                "name": "Jinja2Renderer",
+                                "__time": {
+                                    "start": "2024-10-14T19:14:12.986852",
+                                    "end": "2024-10-14T19:14:12.988481",
+                                    "duration": 1
+                                },
+                                "signature": "prompty.renderers.Jinja2Renderer.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "question": "I would like to return the tent I bought. It is used but I still want to return it since the roof leaks.",
+                                        "context": [
+                                            {
+                                                "id": "1",
+                                                "title": "TrailMaster X4 Tent",
+                                                "content": "Unveiling the TrailMaster X4 Tent from OutdoorLiving, your home away from home for your next camping adventure. Crafted from durable polyester, this tent boasts a spacious interior perfect for four occupants. It ensures your dryness under drizzly skies thanks to its water-resistant construction, and the accompanying rainfly adds an extra layer of weather protection. It offers refreshing airflow and bug defence, courtesy of its mesh panels. Accessibility is not an issue with its multiple doors and interior pockets that keep small items tidy. Reflective guy lines grant better visibility at night, and the freestanding design simplifies setup and relocation. With the included carry bag, transporting this convenient abode becomes a breeze. Be it an overnight getaway or a week-long nature escapade, the TrailMaster X4 Tent provides comfort, convenience, and concord with the great outdoors. Comes with a two-year limited warranty to ensure customer satisfaction.",
+                                                "url": "/products/trailmaster-x4-tent"
+                                            },
+                                            {
+                                                "id": "15",
+                                                "title": "SkyView 2-Person Tent",
+                                                "content": "Introducing the OutdoorLiving SkyView 2-Person Tent, a perfect companion for your camping and hiking adventures. This tent offers a spacious interior that houses two people comfortably, with room to spare. Crafted from durable waterproof materials to shield you from the elements, it is the fortress you need in the wild. Setup is a breeze thanks to its intuitive design and color-coded poles, while two large doors allow for easy access. Stay organized with interior pockets, and store additional gear in its two vestibules. The tent also features mesh panels for effective ventilation, and it comes with a rainfly for extra weather protection. Light enough for on-the-go adventurers, it packs compactly into a carrying bag for seamless transportation. Reflective guy lines ensure visibility at night for added safety, and the tent stands freely for versatile placement. Experience the reliability of double-stitched seams that guarantee increased durability, and rest easy under the stars with OutdoorLiving's SkyView 2-Person Tent. It's not just a tent; it's your home away from home.",
+                                                "url": "/products/skyview-2-person-tent"
+                                            },
+                                            {
+                                                "id": "8",
+                                                "title": "Alpine Explorer Tent",
+                                                "content": "Welcome to the joy of camping with the Alpine Explorer Tent! This robust, 8-person, 3-season marvel is from the responsible hands of the AlpineGear brand. Promising an enviable setup that is as straightforward as counting sheep, your camping experience is transformed into a breezy pastime. Looking for privacy? The detachable divider provides separate spaces at a moment's notice. Love a tent that breathes? The numerous mesh windows and adjustable vents fend off any condensation dragon trying to dampen your adventure fun. The waterproof assurance keeps you worry-free during unexpected rain dances. With a built-in gear loft to stash away your outdoor essentials, the Alpine Explorer Tent emerges as a smooth balance of privacy, comfort, and convenience. Simply put, this tent isn't just a shelter - it's your second home in the heart of nature! Whether you're a seasoned camper or a nature-loving novice, this tent makes exploring the outdoors a joyous journey.",
+                                                "url": "/products/alpine-explorer-tent"
+                                            },
+                                            {
+                                                "id": "17",
+                                                "title": "RainGuard Hiking Jacket",
+                                                "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                                "url": "/products/rainguard-hiking-jacket"
+                                            },
+                                            {
+                                                "id": "3",
+                                                "title": "Summit Breeze Jacket",
+                                                "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                                "url": "/products/summit-breeze-jacket"
+                                            }
+                                        ],
+                                        "answer": "I'm sorry to hear that you're experiencing issues with your tent, Melissa! \ud83d\ude14 In order to process a return, please provide me with your order number and the date of purchase. Once I have this information, I'll be able to assist you further. \ud83d\uded2\ud83c\udfd5\ufe0f"
+                                    }
+                                },
+                                "result": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: I would like to return the tent I bought. It is used but I still want to return it since the roof leaks.\nanswer: I'm sorry to hear that you're experiencing issues with your tent, Melissa! \ud83d\ude14 In order to process a return, please provide me with your order number and the date of purchase. Once I have this information, I'll be able to assist you further. \ud83d\uded2\ud83c\udfd5\ufe0f\nstars:"
+                            },
+                            {
+                                "name": "PromptyChatParser",
+                                "__time": {
+                                    "start": "2024-10-14T19:14:12.988572",
+                                    "end": "2024-10-14T19:14:12.988943",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.parsers.PromptyChatParser.invoke",
+                                "inputs": {
+                                    "data": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: I would like to return the tent I bought. It is used but I still want to return it since the roof leaks.\nanswer: I'm sorry to hear that you're experiencing issues with your tent, Melissa! \ud83d\ude14 In order to process a return, please provide me with your order number and the date of purchase. Once I have this information, I'll be able to assist you further. \ud83d\uded2\ud83c\udfd5\ufe0f\nstars:"
+                                },
+                                "result": [
+                                    {
+                                        "role": "system",
+                                        "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                    },
+                                    {
+                                        "role": "user",
+                                        "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: I would like to return the tent I bought. It is used but I still want to return it since the roof leaks.\nanswer: I'm sorry to hear that you're experiencing issues with your tent, Melissa! \ud83d\ude14 In order to process a return, please provide me with your order number and the date of purchase. Once I have this information, I'll be able to assist you further. \ud83d\uded2\ud83c\udfd5\ufe0f\nstars:"
+                                    }
+                                ]
+                            }
+                        ],
+                        "result": [
+                            {
+                                "role": "system",
+                                "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                            },
+                            {
+                                "role": "user",
+                                "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: I would like to return the tent I bought. It is used but I still want to return it since the roof leaks.\nanswer: I'm sorry to hear that you're experiencing issues with your tent, Melissa! \ud83d\ude14 In order to process a return, please provide me with your order number and the date of purchase. Once I have this information, I'll be able to assist you further. \ud83d\uded2\ud83c\udfd5\ufe0f\nstars:"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "run",
+                        "__time": {
+                            "start": "2024-10-14T19:14:12.989141",
+                            "end": "2024-10-14T19:14:14.458624",
+                            "duration": 1469
+                        },
+                        "signature": "prompty.run",
+                        "description": "Run the prepared Prompty content against the model.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Fluency Evaluation",
+                                "description": "Evaluates fluency score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_deployment": "gpt-4-evals",
+                                        "api_version": "2023-07-01-preview"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 128,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/fluency.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "content": [
+                                {
+                                    "role": "system",
+                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                },
+                                {
+                                    "role": "user",
+                                    "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: I would like to return the tent I bought. It is used but I still want to return it since the roof leaks.\nanswer: I'm sorry to hear that you're experiencing issues with your tent, Melissa! \ud83d\ude14 In order to process a return, please provide me with your order number and the date of purchase. Once I have this information, I'll be able to assist you further. \ud83d\uded2\ud83c\udfd5\ufe0f\nstars:"
+                                }
+                            ],
+                            "configuration": {
+                                "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                                "api_version": "2023-03-15-preview"
+                            },
+                            "parameters": {},
+                            "raw": false
+                        },
+                        "__frames": [
+                            {
+                                "name": "AzureOpenAIExecutor",
+                                "__time": {
+                                    "start": "2024-10-14T19:14:12.989937",
+                                    "end": "2024-10-14T19:14:14.458298",
+                                    "duration": 1468
+                                },
+                                "signature": "prompty.azure.executor.AzureOpenAIExecutor.invoke",
+                                "inputs": {
+                                    "data": [
+                                        {
+                                            "role": "system",
+                                            "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                        },
+                                        {
+                                            "role": "user",
+                                            "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: I would like to return the tent I bought. It is used but I still want to return it since the roof leaks.\nanswer: I'm sorry to hear that you're experiencing issues with your tent, Melissa! \ud83d\ude14 In order to process a return, please provide me with your order number and the date of purchase. Once I have this information, I'll be able to assist you further. \ud83d\uded2\ud83c\udfd5\ufe0f\nstars:"
+                                        }
+                                    ]
+                                },
+                                "__frames": [
+                                    {
+                                        "name": "AzureOpenAI",
+                                        "__time": {
+                                            "start": "2024-10-14T19:14:12.990140",
+                                            "end": "2024-10-14T19:14:12.998789",
+                                            "duration": 8
+                                        },
+                                        "type": "LLM",
+                                        "signature": "AzureOpenAI.ctor",
+                                        "description": "Azure OpenAI Constructor",
+                                        "inputs": {
+                                            "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                                            "api_version": "2023-03-15-preview",
+                                            "azure_deployment": "gpt-4-evals",
+                                            "azure_ad_token_provider": "***********************************************************************"
+                                        },
+                                        "result": "<openai.lib.azure.AzureOpenAI object at 0x778012faaa50>"
+                                    },
+                                    {
+                                        "name": "create",
+                                        "__time": {
+                                            "start": "2024-10-14T19:14:12.998837",
+                                            "end": "2024-10-14T19:14:14.458112",
+                                            "duration": 1459
+                                        },
+                                        "type": "LLM",
+                                        "description": "Azure OpenAI Client",
+                                        "signature": "AzureOpenAI.chat.completions.create",
+                                        "inputs": {
+                                            "model": "gpt-4-evals",
+                                            "messages": [
+                                                {
+                                                    "role": "system",
+                                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                                },
+                                                {
+                                                    "role": "user",
+                                                    "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: I would like to return the tent I bought. It is used but I still want to return it since the roof leaks.\nanswer: I'm sorry to hear that you're experiencing issues with your tent, Melissa! \ud83d\ude14 In order to process a return, please provide me with your order number and the date of purchase. Once I have this information, I'll be able to assist you further. \ud83d\uded2\ud83c\udfd5\ufe0f\nstars:"
+                                                }
+                                            ],
+                                            "max_tokens": 128,
+                                            "temperature": 0.2
+                                        },
+                                        "result": {
+                                            "id": "chatcmpl-AIKo9Agx0Abcuus7YYsOwzAwiSNy0",
+                                            "choices": [
+                                                {
+                                                    "finish_reason": "stop",
+                                                    "index": 0,
+                                                    "logprobs": null,
+                                                    "message": {
+                                                        "content": "4",
+                                                        "refusal": null,
+                                                        "role": "assistant",
+                                                        "function_call": null,
+                                                        "tool_calls": null
+                                                    }
+                                                }
+                                            ],
+                                            "created": 1728933253,
+                                            "model": "gpt-4",
+                                            "object": "chat.completion",
+                                            "service_tier": null,
+                                            "system_fingerprint": "fp_811936bd4f",
+                                            "usage": {
+                                                "completion_tokens": 1,
+                                                "prompt_tokens": 548,
+                                                "total_tokens": 549,
+                                                "completion_tokens_details": null,
+                                                "prompt_tokens_details": null
+                                            }
+                                        },
+                                        "__usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 548,
+                                            "total_tokens": 549
+                                        }
+                                    }
+                                ],
+                                "result": {
+                                    "id": "chatcmpl-AIKo9Agx0Abcuus7YYsOwzAwiSNy0",
+                                    "choices": [
+                                        {
+                                            "finish_reason": "stop",
+                                            "index": 0,
+                                            "logprobs": "None",
+                                            "message": {
+                                                "content": "4",
+                                                "refusal": "None",
+                                                "role": "assistant",
+                                                "function_call": "None",
+                                                "tool_calls": "None"
+                                            }
+                                        }
+                                    ],
+                                    "created": 1728933253,
+                                    "model": "gpt-4",
+                                    "object": "chat.completion",
+                                    "service_tier": "None",
+                                    "system_fingerprint": "fp_811936bd4f",
+                                    "usage": {
+                                        "completion_tokens": 1,
+                                        "prompt_tokens": 548,
+                                        "total_tokens": 549,
+                                        "completion_tokens_details": "****",
+                                        "prompt_tokens_details": "****"
+                                    }
+                                },
+                                "__usage": {
+                                    "completion_tokens": 2,
+                                    "prompt_tokens": 1096,
+                                    "total_tokens": 1098,
+                                    "completion_tokens_details": "****",
+                                    "prompt_tokens_details": "****"
+                                }
+                            },
+                            {
+                                "name": "AzureOpenAIProcessor",
+                                "__time": {
+                                    "start": "2024-10-14T19:14:14.458361",
+                                    "end": "2024-10-14T19:14:14.458580",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.azure.processor.AzureOpenAIProcessor.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "id": "chatcmpl-AIKo9Agx0Abcuus7YYsOwzAwiSNy0",
+                                        "choices": [
+                                            {
+                                                "finish_reason": "stop",
+                                                "index": 0,
+                                                "logprobs": "None",
+                                                "message": {
+                                                    "content": "4",
+                                                    "refusal": "None",
+                                                    "role": "assistant",
+                                                    "function_call": "None",
+                                                    "tool_calls": "None"
+                                                }
+                                            }
+                                        ],
+                                        "created": 1728933253,
+                                        "model": "gpt-4",
+                                        "object": "chat.completion",
+                                        "service_tier": "None",
+                                        "system_fingerprint": "fp_811936bd4f",
+                                        "usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 548,
+                                            "total_tokens": 549,
+                                            "completion_tokens_details": "****",
+                                            "prompt_tokens_details": "****"
+                                        }
+                                    }
+                                },
+                                "result": "4"
+                            }
+                        ],
+                        "result": "4",
+                        "__usage": {
+                            "completion_tokens": 2,
+                            "prompt_tokens": 1096,
+                            "total_tokens": 1098,
+                            "completion_tokens_details": "****",
+                            "prompt_tokens_details": "****"
+                        }
+                    }
+                ],
+                "result": "4",
+                "__usage": {
+                    "completion_tokens": 2,
+                    "prompt_tokens": 1096,
+                    "total_tokens": 1098,
+                    "completion_tokens_details": "****",
+                    "prompt_tokens_details": "****"
+                }
+            }
+        ],
+        "result": "4",
+        "__usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 1096,
+            "total_tokens": 1098,
+            "completion_tokens_details": "****",
+            "prompt_tokens_details": "****"
+        }
+    }
+}

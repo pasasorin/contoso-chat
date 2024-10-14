@@ -1,0 +1,548 @@
+{
+    "runtime": "python",
+    "version": "0.1.24",
+    "trace": {
+        "name": "coherence_evaluation",
+        "__time": {
+            "start": "2024-10-14T19:13:18.624252",
+            "end": "2024-10-14T19:13:20.213101",
+            "duration": 1588
+        },
+        "signature": "evaluators.custom_evals.coherence.coherence_evaluation",
+        "inputs": {
+            "question": "is the jacket I bought machine washable?",
+            "context": [
+                {
+                    "id": "3",
+                    "title": "Summit Breeze Jacket",
+                    "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                    "url": "/products/summit-breeze-jacket"
+                },
+                {
+                    "id": "17",
+                    "title": "RainGuard Hiking Jacket",
+                    "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                    "url": "/products/rainguard-hiking-jacket"
+                }
+            ],
+            "answer": "Yes, the Summit Breeze Jacket is machine washable. \ud83e\uddfa\ud83d\udc55"
+        },
+        "__frames": [
+            {
+                "name": "execute",
+                "__time": {
+                    "start": "2024-10-14T19:13:18.624428",
+                    "end": "2024-10-14T19:13:20.213059",
+                    "duration": 1588
+                },
+                "signature": "prompty.execute",
+                "description": "Execute a prompty",
+                "inputs": {
+                    "prompt": "coherence.prompty",
+                    "configuration": {
+                        "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                        "api_version": "2023-03-15-preview"
+                    },
+                    "parameters": {},
+                    "inputs": {
+                        "question": "is the jacket I bought machine washable?",
+                        "context": [
+                            {
+                                "id": "3",
+                                "title": "Summit Breeze Jacket",
+                                "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                "url": "/products/summit-breeze-jacket"
+                            },
+                            {
+                                "id": "17",
+                                "title": "RainGuard Hiking Jacket",
+                                "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                "url": "/products/rainguard-hiking-jacket"
+                            }
+                        ],
+                        "answer": "Yes, the Summit Breeze Jacket is machine washable. \ud83e\uddfa\ud83d\udc55"
+                    },
+                    "raw": false,
+                    "config_name": "default"
+                },
+                "__frames": [
+                    {
+                        "name": "load",
+                        "__time": {
+                            "start": "2024-10-14T19:13:18.624924",
+                            "end": "2024-10-14T19:13:18.627801",
+                            "duration": 2
+                        },
+                        "signature": "prompty.load",
+                        "description": "Load a prompty file.",
+                        "inputs": {
+                            "prompty_file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                            "configuration": "default"
+                        },
+                        "result": {
+                            "name": "QnA Coherence Evaluation",
+                            "description": "Evaluates coherence score for QA scenario",
+                            "model": {
+                                "api": "chat",
+                                "configuration": {
+                                    "type": "azure_openai",
+                                    "azure_deployment": "gpt-4-evals",
+                                    "api_version": "2023-07-01-preview"
+                                },
+                                "parameters": {
+                                    "max_tokens": 128,
+                                    "temperature": 0.2
+                                },
+                                "response": {}
+                            },
+                            "sample": {
+                                "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                            },
+                            "inputs": {
+                                "question": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "context": {
+                                    "type": "object",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "answer": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                }
+                            },
+                            "template": {
+                                "type": "jinja2",
+                                "parser": "prompty"
+                            },
+                            "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                            "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                        }
+                    },
+                    {
+                        "name": "prepare",
+                        "__time": {
+                            "start": "2024-10-14T19:13:18.627849",
+                            "end": "2024-10-14T19:13:18.629547",
+                            "duration": 1
+                        },
+                        "signature": "prompty.prepare",
+                        "description": "Prepare the inputs for the prompt.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Coherence Evaluation",
+                                "description": "Evaluates coherence score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_deployment": "gpt-4-evals",
+                                        "api_version": "2023-07-01-preview"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 128,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "inputs": {
+                                "question": "is the jacket I bought machine washable?",
+                                "context": [
+                                    {
+                                        "id": "3",
+                                        "title": "Summit Breeze Jacket",
+                                        "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                        "url": "/products/summit-breeze-jacket"
+                                    },
+                                    {
+                                        "id": "17",
+                                        "title": "RainGuard Hiking Jacket",
+                                        "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                        "url": "/products/rainguard-hiking-jacket"
+                                    }
+                                ],
+                                "answer": "Yes, the Summit Breeze Jacket is machine washable. \ud83e\uddfa\ud83d\udc55"
+                            }
+                        },
+                        "__frames": [
+                            {
+                                "name": "Jinja2Renderer",
+                                "__time": {
+                                    "start": "2024-10-14T19:13:18.628211",
+                                    "end": "2024-10-14T19:13:18.629197",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.renderers.Jinja2Renderer.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "question": "is the jacket I bought machine washable?",
+                                        "context": [
+                                            {
+                                                "id": "3",
+                                                "title": "Summit Breeze Jacket",
+                                                "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                                "url": "/products/summit-breeze-jacket"
+                                            },
+                                            {
+                                                "id": "17",
+                                                "title": "RainGuard Hiking Jacket",
+                                                "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                                "url": "/products/rainguard-hiking-jacket"
+                                            }
+                                        ],
+                                        "answer": "Yes, the Summit Breeze Jacket is machine washable. \ud83e\uddfa\ud83d\udc55"
+                                    }
+                                },
+                                "result": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: is the jacket I bought machine washable?\nanswer: Yes, the Summit Breeze Jacket is machine washable. \ud83e\uddfa\ud83d\udc55\nstars:"
+                            },
+                            {
+                                "name": "PromptyChatParser",
+                                "__time": {
+                                    "start": "2024-10-14T19:13:18.629256",
+                                    "end": "2024-10-14T19:13:18.629468",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.parsers.PromptyChatParser.invoke",
+                                "inputs": {
+                                    "data": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: is the jacket I bought machine washable?\nanswer: Yes, the Summit Breeze Jacket is machine washable. \ud83e\uddfa\ud83d\udc55\nstars:"
+                                },
+                                "result": [
+                                    {
+                                        "role": "system",
+                                        "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                    },
+                                    {
+                                        "role": "user",
+                                        "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: is the jacket I bought machine washable?\nanswer: Yes, the Summit Breeze Jacket is machine washable. \ud83e\uddfa\ud83d\udc55\nstars:"
+                                    }
+                                ]
+                            }
+                        ],
+                        "result": [
+                            {
+                                "role": "system",
+                                "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                            },
+                            {
+                                "role": "user",
+                                "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: is the jacket I bought machine washable?\nanswer: Yes, the Summit Breeze Jacket is machine washable. \ud83e\uddfa\ud83d\udc55\nstars:"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "run",
+                        "__time": {
+                            "start": "2024-10-14T19:13:18.629582",
+                            "end": "2024-10-14T19:13:20.213005",
+                            "duration": 1583
+                        },
+                        "signature": "prompty.run",
+                        "description": "Run the prepared Prompty content against the model.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Coherence Evaluation",
+                                "description": "Evaluates coherence score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_deployment": "gpt-4-evals",
+                                        "api_version": "2023-07-01-preview"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 128,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "content": [
+                                {
+                                    "role": "system",
+                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                },
+                                {
+                                    "role": "user",
+                                    "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: is the jacket I bought machine washable?\nanswer: Yes, the Summit Breeze Jacket is machine washable. \ud83e\uddfa\ud83d\udc55\nstars:"
+                                }
+                            ],
+                            "configuration": {
+                                "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                                "api_version": "2023-03-15-preview"
+                            },
+                            "parameters": {},
+                            "raw": false
+                        },
+                        "__frames": [
+                            {
+                                "name": "AzureOpenAIExecutor",
+                                "__time": {
+                                    "start": "2024-10-14T19:13:18.630158",
+                                    "end": "2024-10-14T19:13:20.212673",
+                                    "duration": 1582
+                                },
+                                "signature": "prompty.azure.executor.AzureOpenAIExecutor.invoke",
+                                "inputs": {
+                                    "data": [
+                                        {
+                                            "role": "system",
+                                            "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                        },
+                                        {
+                                            "role": "user",
+                                            "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: is the jacket I bought machine washable?\nanswer: Yes, the Summit Breeze Jacket is machine washable. \ud83e\uddfa\ud83d\udc55\nstars:"
+                                        }
+                                    ]
+                                },
+                                "__frames": [
+                                    {
+                                        "name": "AzureOpenAI",
+                                        "__time": {
+                                            "start": "2024-10-14T19:13:18.630276",
+                                            "end": "2024-10-14T19:13:18.636143",
+                                            "duration": 5
+                                        },
+                                        "type": "LLM",
+                                        "signature": "AzureOpenAI.ctor",
+                                        "description": "Azure OpenAI Constructor",
+                                        "inputs": {
+                                            "azure_endpoint": "https://aoai-44797661.openai.azure.com/",
+                                            "api_version": "2023-03-15-preview",
+                                            "azure_deployment": "gpt-4-evals",
+                                            "azure_ad_token_provider": "***********************************************************************"
+                                        },
+                                        "result": "<openai.lib.azure.AzureOpenAI object at 0x778013010550>"
+                                    },
+                                    {
+                                        "name": "create",
+                                        "__time": {
+                                            "start": "2024-10-14T19:13:18.636187",
+                                            "end": "2024-10-14T19:13:20.212481",
+                                            "duration": 1576
+                                        },
+                                        "type": "LLM",
+                                        "description": "Azure OpenAI Client",
+                                        "signature": "AzureOpenAI.chat.completions.create",
+                                        "inputs": {
+                                            "model": "gpt-4-evals",
+                                            "messages": [
+                                                {
+                                                    "role": "system",
+                                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                                },
+                                                {
+                                                    "role": "user",
+                                                    "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: is the jacket I bought machine washable?\nanswer: Yes, the Summit Breeze Jacket is machine washable. \ud83e\uddfa\ud83d\udc55\nstars:"
+                                                }
+                                            ],
+                                            "max_tokens": 128,
+                                            "temperature": 0.2
+                                        },
+                                        "result": {
+                                            "id": "chatcmpl-AIKnHFBvNAsLyJt8bzs6EnwLuLra9",
+                                            "choices": [
+                                                {
+                                                    "finish_reason": "stop",
+                                                    "index": 0,
+                                                    "logprobs": null,
+                                                    "message": {
+                                                        "content": "5",
+                                                        "refusal": null,
+                                                        "role": "assistant",
+                                                        "function_call": null,
+                                                        "tool_calls": null
+                                                    }
+                                                }
+                                            ],
+                                            "created": 1728933199,
+                                            "model": "gpt-4",
+                                            "object": "chat.completion",
+                                            "service_tier": null,
+                                            "system_fingerprint": "fp_811936bd4f",
+                                            "usage": {
+                                                "completion_tokens": 1,
+                                                "prompt_tokens": 500,
+                                                "total_tokens": 501,
+                                                "completion_tokens_details": null,
+                                                "prompt_tokens_details": null
+                                            }
+                                        },
+                                        "__usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 500,
+                                            "total_tokens": 501
+                                        }
+                                    }
+                                ],
+                                "result": {
+                                    "id": "chatcmpl-AIKnHFBvNAsLyJt8bzs6EnwLuLra9",
+                                    "choices": [
+                                        {
+                                            "finish_reason": "stop",
+                                            "index": 0,
+                                            "logprobs": "None",
+                                            "message": {
+                                                "content": "5",
+                                                "refusal": "None",
+                                                "role": "assistant",
+                                                "function_call": "None",
+                                                "tool_calls": "None"
+                                            }
+                                        }
+                                    ],
+                                    "created": 1728933199,
+                                    "model": "gpt-4",
+                                    "object": "chat.completion",
+                                    "service_tier": "None",
+                                    "system_fingerprint": "fp_811936bd4f",
+                                    "usage": {
+                                        "completion_tokens": 1,
+                                        "prompt_tokens": 500,
+                                        "total_tokens": 501,
+                                        "completion_tokens_details": "****",
+                                        "prompt_tokens_details": "****"
+                                    }
+                                },
+                                "__usage": {
+                                    "completion_tokens": 2,
+                                    "prompt_tokens": 1000,
+                                    "total_tokens": 1002,
+                                    "completion_tokens_details": "****",
+                                    "prompt_tokens_details": "****"
+                                }
+                            },
+                            {
+                                "name": "AzureOpenAIProcessor",
+                                "__time": {
+                                    "start": "2024-10-14T19:13:20.212736",
+                                    "end": "2024-10-14T19:13:20.212960",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.azure.processor.AzureOpenAIProcessor.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "id": "chatcmpl-AIKnHFBvNAsLyJt8bzs6EnwLuLra9",
+                                        "choices": [
+                                            {
+                                                "finish_reason": "stop",
+                                                "index": 0,
+                                                "logprobs": "None",
+                                                "message": {
+                                                    "content": "5",
+                                                    "refusal": "None",
+                                                    "role": "assistant",
+                                                    "function_call": "None",
+                                                    "tool_calls": "None"
+                                                }
+                                            }
+                                        ],
+                                        "created": 1728933199,
+                                        "model": "gpt-4",
+                                        "object": "chat.completion",
+                                        "service_tier": "None",
+                                        "system_fingerprint": "fp_811936bd4f",
+                                        "usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 500,
+                                            "total_tokens": 501,
+                                            "completion_tokens_details": "****",
+                                            "prompt_tokens_details": "****"
+                                        }
+                                    }
+                                },
+                                "result": "5"
+                            }
+                        ],
+                        "result": "5",
+                        "__usage": {
+                            "completion_tokens": 2,
+                            "prompt_tokens": 1000,
+                            "total_tokens": 1002,
+                            "completion_tokens_details": "****",
+                            "prompt_tokens_details": "****"
+                        }
+                    }
+                ],
+                "result": "5",
+                "__usage": {
+                    "completion_tokens": 2,
+                    "prompt_tokens": 1000,
+                    "total_tokens": 1002,
+                    "completion_tokens_details": "****",
+                    "prompt_tokens_details": "****"
+                }
+            }
+        ],
+        "result": "5",
+        "__usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 1000,
+            "total_tokens": 1002,
+            "completion_tokens_details": "****",
+            "prompt_tokens_details": "****"
+        }
+    }
+}
